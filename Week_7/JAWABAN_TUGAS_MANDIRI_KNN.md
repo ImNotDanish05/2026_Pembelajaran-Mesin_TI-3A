@@ -55,9 +55,42 @@ Diberikan titik query $Z = (x_q, y_q) = (6, 4)$ dan data latih $P_i = (x_i, y_i)
 
 ---
 
-### 2.2 Tahap 2 & 3: Substitusi Nilai & Tabel Peringkat 24 Baris
+### 2.2 Tahap 2 & 3: Substitusi Nilai & Tabel Perhitungan (2 Versi Tabel)
 
-Berikut adalah hasil perhitungan langkah-demi-langkah untuk ke-24 titik data terhadap Query $Z(6, 4)$, telah diurutkan dari peringkat 1 hingga 24 berdasarkan nilai $s$ dan aturan seri alfabetis:
+#### 📊 Tabel 1A: Perhitungan Lengkap 24 Baris (Urutan Data Asli A s/d X + Kolom Peringkat)
+Tabel ini memuat urutan data asli ($A$ s/d $X$) lengkap dengan proses perhitungan selisih ($\Delta x, \Delta y$), kuadrat selisih ($\Delta x^2, \Delta y^2$), jumlah kuadrat ($s$), jarak Euclidean ($d$), serta **nomor peringkat akhir** yang diperoleh setiap titik setelah aturan seri diterapkan:
+
+| ID | $x$ (Suhu) | $y$ (Lembap) | $\Delta x = x - 6$ | $\Delta y = y - 4$ | $\Delta x^2$ | $\Delta y^2$ | $s = \Delta x^2 + \Delta y^2$ | Jarak $d = \sqrt{s}$ | Kelas Aktual | Peringkat Akhir (Rank) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **A** | 1 | 2 | $-5$ | $-2$ | 25 | 4 | 29 | 5.3852 | **Gerah** | **Peringkat 24** |
+| **B** | 2 | 1 | $-4$ | $-3$ | 16 | 9 | 25 | 5.0000 | **Gerah** | **Peringkat 22** |
+| **C** | 2 | 3 | $-4$ | $-1$ | 16 | 1 | 17 | 4.1231 | **Gerah** | **Peringkat 17** |
+| **D** | 3 | 2 | $-3$ | $-2$ | 9 | 4 | 13 | 3.6056 | **Gerah** | **Peringkat 14** |
+| **E** | 1 | 5 | $-5$ | $+1$ | 25 | 1 | 26 | 5.0990 | **Gerah** | **Peringkat 23** |
+| **F** | 5 | 1 | $-1$ | $-3$ | 1 | 9 | 10 | 3.1623 | **Gerah** | **Peringkat 11** |
+| **G** | 3 | 5 | $-3$ | $+1$ | 9 | 1 | 10 | 3.1623 | **Gerah** | **Peringkat 12** |
+| **H** | 5 | 3 | $-1$ | $-1$ | 1 | 1 | 2 | 1.4142 | **Gerah** | **Peringkat 2** |
+| **I** | 2 | 6 | $-4$ | $+2$ | 16 | 4 | 20 | 4.4721 | **Gerah** | **Peringkat 20** |
+| **J** | 6 | 2 | $0$ | $-2$ | 0 | 4 | 4 | 2.0000 | **Gerah** | **Peringkat 4** |
+| **K** | 4 | 5 | $-2$ | $+1$ | 4 | 1 | 5 | 2.2361 | **Gerah** | **Peringkat 6** |
+| **L** | 5 | 4 | $-1$ | $0$ | 1 | 0 | 1 | 1.0000 | **Gerah** | **Peringkat 1** |
+| **M** | 7 | 6 | $+1$ | $+2$ | 1 | 4 | 5 | 2.2361 | **Nyaman** | **Peringkat 7** |
+| **N** | 8 | 5 | $+2$ | $+1$ | 4 | 1 | 5 | 2.2361 | **Nyaman** | **Peringkat 8** |
+| **O** | 6 | 7 | $0$ | $+3$ | 0 | 9 | 9 | 3.0000 | **Nyaman** | **Peringkat 10** |
+| **P** | 7 | 8 | $+1$ | $+4$ | 1 | 16 | 17 | 4.1231 | **Nyaman** | **Peringkat 18** |
+| **Q** | 8 | 7 | $+2$ | $+3$ | 4 | 9 | 13 | 3.6056 | **Nyaman** | **Peringkat 15** |
+| **R** | 8 | 8 | $+2$ | $+4$ | 4 | 16 | 20 | 4.4721 | **Nyaman** | **Peringkat 21** |
+| **S** | 9 | 7 | $+3$ | $+3$ | 9 | 9 | 18 | 4.2426 | **Nyaman** | **Peringkat 19** |
+| **T** | 7 | 5 | $+1$ | $+1$ | 1 | 1 | 2 | 1.4142 | **Nyaman** | **Peringkat 3** |
+| **U** | 6 | 6 | $0$ | $+2$ | 0 | 4 | 4 | 2.0000 | **Nyaman** | **Peringkat 5** |
+| **V** | 9 | 6 | $+3$ | $+2$ | 9 | 4 | 13 | 3.6056 | **Nyaman** | **Peringkat 16** |
+| **W** | 8 | 6 | $+2$ | $+2$ | 4 | 4 | 8 | 2.8284 | **Nyaman** | **Peringkat 9** |
+| **X** | 7 | 7 | $+1$ | $+3$ | 1 | 9 | 10 | 3.1623 | **Nyaman** | **Peringkat 13** |
+
+---
+
+#### 🏆 Tabel 1B: Tabel Peringkat Terurut (Rank 1 s/d 24 — Hasil Urut Jarak & Aturan Seri)
+Tabel ini telah diurutkan dari jarak terdekat ke terjauh dengan menerapkan aturan seri alfabetis untuk menentukan tetangga terpilih pada $K = 3, 5, 7$:
 
 | Peringkat | ID | $x$ (Suhu) | $y$ (Lembap) | $\Delta x = x - 6$ | $\Delta y = y - 4$ | $\Delta x^2$ | $\Delta y^2$ | $s = \Delta x^2 + \Delta y^2$ | Jarak $d = \sqrt{s}$ | Kelas Aktual | Keterangan Seri / Status Tetangga |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
@@ -190,9 +223,42 @@ Diberikan titik query $Z = (x_q, y_q) = (5.5, 2.5)$ dan target kontinu konsumsi 
 
 ---
 
-### 3.2 Tahap 2 & 3: Substitusi Nilai & Tabel Peringkat 24 Baris
+### 3.2 Tahap 2 & 3: Substitusi Nilai & Tabel Perhitungan (2 Versi Tabel)
 
-Berikut adalah rincian perhitungan manual langkah-demi-langkah ke-24 baris data terhadap Query $Z(5.5, 2.5)$, diurutkan dari peringkat 1 s/d 24:
+#### 📊 Tabel 2A: Perhitungan Lengkap 24 Baris (Urutan Data Asli A s/d X + Kolom Peringkat)
+Tabel ini memuat urutan data asli ($A$ s/d $X$) lengkap dengan nilai durasi operasional ($x$), jumlah perangkat aktif ($y$), perhitungan selisih ($\Delta x, \Delta y$), kuadrat selisih ($\Delta x^2, \Delta y^2$), jumlah kuadrat ($s$), jarak Euclidean ($d$), target aktual konsumsi energi listrik, serta **nomor peringkat akhir** yang diperoleh setelah aturan seri diterapkan:
+
+| ID | Jam ($x$) | Unit ($y$) | $\Delta x = x - 5.5$ | $\Delta y = y - 2.5$ | $\Delta x^2$ | $\Delta y^2$ | $s = \Delta x^2 + \Delta y^2$ | Jarak $d = \sqrt{s}$ | Energi ($y$) | Peringkat Akhir (Rank) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **A** | 2 | 1 | $-3.5$ | $-1.5$ | 12.25 | 2.25 | 14.50 | 3.8079 | **35** | **Peringkat 24** |
+| **B** | 3 | 1 | $-2.5$ | $-1.5$ | 6.25 | 2.25 | 8.50 | 2.9155 | **45** | **Peringkat 19** |
+| **C** | 4 | 1 | $-1.5$ | $-1.5$ | 2.25 | 2.25 | 4.50 | 2.1213 | **55** | **Peringkat 12** |
+| **D** | 5 | 1 | $-0.5$ | $-1.5$ | 0.25 | 2.25 | 2.50 | 1.5811 | **65** | **Peringkat 4** |
+| **E** | 6 | 1 | $+0.5$ | $-1.5$ | 0.25 | 2.25 | 2.50 | 1.5811 | **75** | **Peringkat 5** |
+| **F** | 7 | 1 | $+1.5$ | $-1.5$ | 2.25 | 2.25 | 4.50 | 2.1213 | **85** | **Peringkat 13** |
+| **G** | 2 | 2 | $-3.5$ | $-0.5$ | 12.25 | 0.25 | 12.50 | 3.5355 | **45** | **Peringkat 22** |
+| **H** | 3 | 2 | $-2.5$ | $-0.5$ | 6.25 | 0.25 | 6.50 | 2.5495 | **55** | **Peringkat 16** |
+| **I** | 4 | 2 | $-1.5$ | $-0.5$ | 2.25 | 0.25 | 2.50 | 1.5811 | **65** | **Peringkat 6** |
+| **J** | 5 | 2 | $-0.5$ | $-0.5$ | 0.25 | 0.25 | 0.50 | 0.7071 | **75** | **Peringkat 1** |
+| **K** | 6 | 2 | $+0.5$ | $-0.5$ | 0.25 | 0.25 | 0.50 | 0.7071 | **85** | **Peringkat 2** |
+| **L** | 7 | 2 | $+1.5$ | $-0.5$ | 2.25 | 0.25 | 2.50 | 1.5811 | **95** | **Peringkat 7** |
+| **M** | 2 | 3 | $-3.5$ | $+0.5$ | 12.25 | 0.25 | 12.50 | 3.5355 | **55** | **Peringkat 23** |
+| **N** | 3 | 3 | $-2.5$ | $+0.5$ | 6.25 | 0.25 | 6.50 | 2.5495 | **65** | **Peringkat 17** |
+| **O** | 4 | 3 | $-1.5$ | $+0.5$ | 2.25 | 0.25 | 2.50 | 1.5811 | **75** | **Peringkat 8** |
+| **P** | 6 | 3 | $+0.5$ | $+0.5$ | 0.25 | 0.25 | 0.50 | 0.7071 | **95** | **Peringkat 3** |
+| **Q** | 7 | 3 | $+1.5$ | $+0.5$ | 2.25 | 0.25 | 2.50 | 1.5811 | **105** | **Peringkat 9** |
+| **R** | 8 | 3 | $+2.5$ | $+0.5$ | 6.25 | 0.25 | 6.50 | 2.5495 | **115** | **Peringkat 18** |
+| **S** | 3 | 4 | $-2.5$ | $+1.5$ | 6.25 | 2.25 | 8.50 | 2.9155 | **75** | **Peringkat 20** |
+| **T** | 4 | 4 | $-1.5$ | $+1.5$ | 2.25 | 2.25 | 4.50 | 2.1213 | **85** | **Peringkat 14** |
+| **U** | 5 | 4 | $-0.5$ | $+1.5$ | 0.25 | 2.25 | 2.50 | 1.5811 | **95** | **Peringkat 10** |
+| **V** | 6 | 4 | $+0.5$ | $+1.5$ | 0.25 | 2.25 | 2.50 | 1.5811 | **105** | **Peringkat 11** |
+| **W** | 7 | 4 | $+1.5$ | $+1.5$ | 2.25 | 2.25 | 4.50 | 2.1213 | **115** | **Peringkat 15** |
+| **X** | 8 | 4 | $+2.5$ | $+1.5$ | 6.25 | 2.25 | 8.50 | 2.9155 | **125** | **Peringkat 21** |
+
+---
+
+#### 🏆 Tabel 2B: Tabel Peringkat Terurut (Rank 1 s/d 24 — Hasil Urut Jarak & Aturan Seri)
+Tabel ini telah diurutkan dari jarak terdekat ke terjauh dengan menerapkan aturan seri alfabetis untuk menentukan tetangga terpilih pada $K = 3, 5, 7$:
 
 | Peringkat | ID | Jam ($x$) | Unit ($y$) | $\Delta x = x - 5.5$ | $\Delta y = y - 2.5$ | $\Delta x^2$ | $\Delta y^2$ | $s = \Delta x^2 + \Delta y^2$ | Jarak $d = \sqrt{s}$ | Energi ($y$) | Keterangan Seri / Status Tetangga |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
