@@ -157,11 +157,11 @@ Tabel ini telah diurutkan dari jarak terdekat ke terjauh dengan menerapkan atura
 
 ### 2.4 Tahap 5: Visualisasi Scatter Plot
 
-Grafik sebaran data latih, letak Query $Z(6, 4)$, lingkaran radius $K=3, 5, 7$, serta sorotan pada 7 tetangga terdekat ditampilkan langsung pada gambar berikut:
+Grafik sebaran data latih, letak Query $Z(6, 4)$, lingkaran radius $K=3, 5, 7$, serta identitas seluruh 24 titik data ditampilkan langsung pada gambar berikut:
 
 ![Visualisasi Tugas 1: Klasifikasi Kenyamanan Ruangan](./visualisasi_tugas1_km.png)
 
-*Catatan Tampilan:* Sesuai regulasi tugas $N > 20$, hanya titik Query $Z(6,4)$ dan 7 tetangga terdekat ({L, H, T, J, U, K, M}) yang dilabeli teks ID agar keterbacaan grafik tetap bersih dan informatif. Lingkaran putus-putus menunjukkan batas radius tetangga untuk variasi nilai $K$.
+*Catatan Tampilan:* Seluruh 24 titik data ($A$ s/d $X$) telah diberi label teks ID secara lengkap. Titik Query $Z(6,4)$ ditandai dengan bintang oranye, 7 tetangga terdekat ({L, H, T, J, U, K, M}) disorot dengan kotak label kuning emas (*highlighted*), dan titik lainnya berlabel putih bersih. Garis lingkaran putus-putus menunjukkan batas radius pencarian untuk $K=3$ ($d=1.414$), $K=5$ ($d=2.000$), dan $K=7$ ($d=2.236$).
 
 ---
 
@@ -331,11 +331,11 @@ Tabel ini telah diurutkan dari jarak terdekat ke terjauh dengan menerapkan atura
 
 ### 3.4 Tahap 5: Visualisasi Scatter Plot
 
-Visualisasi sebaran data regresi beserta nilai target konsumsi energi listrik (skala gradasi warna *coolwarm*), lingkaran radius $K=3$ dan $K=5,7$, serta penanda Query $Z(5.5, 2.5)$ ditampilkan langsung pada gambar berikut:
+Visualisasi sebaran data regresi beserta nilai target konsumsi energi listrik (skala gradasi warna *coolwarm*), lingkaran radius $K=3$ dan $K=5,7$, serta identitas seluruh 24 titik data ditampilkan langsung pada gambar berikut:
 
 ![Visualisasi Tugas 2: Regresi Konsumsi Energi Lab](./visualisasi_tugas2_rm.png)
 
-*Catatan Tampilan:* Sesuai regulasi tugas $N > 20$, hanya titik Query $Z(5.5, 2.5)$ dan 7 tetangga terdekat ({J, K, P, D, E, I, L}) yang dilabeli teks ID beserta nilai kWh targetnya agar keterbacaan grafik tetap optimal dan bersih. Lingkaran putus-putus menggambarkan batas radius pencarian tetangga terdekat.
+*Catatan Tampilan:* Seluruh 24 titik data ($A$ s/d $X$) dilabeli lengkap dengan format `ID: Nilai kWh`. Titik Query $Z(5.5, 2.5)$ ditandai dengan bintang kuning besar, 7 tetangga terdekat ({J, K, P, D, E, I, L}) disorot dengan label kuning emas (*highlighted*), dan titik lainnya berlabel putih rapi. Lingkaran putus-putus menggambarkan batas radius pencarian tetangga terdekat.
 
 ---
 
