@@ -5,19 +5,19 @@
 Machine learning coursework repository covering supervised learning implementations, manual numerical calculations, multi-model benchmarks, and evaluation metrics (classification and regression).
 
 ## Stack
-- Python 3.14+
+- Python 3.10+ (use `py -3.10` where data science libraries are installed)
 - Libraries: `scikit-learn`, `pandas`, `numpy`, `matplotlib`, `seaborn`
 - Environment: Jupyter Notebooks (`.ipynb`) and Python scripts (`.py`)
 
 ## Commands
 - Run notebook headless / execute test: `python -m pytest` or run cells via Python script / Jupyter runner
-- Python check: `python <script_path>.py`
-- Package install: `pip install scikit-learn pandas numpy matplotlib seaborn`
+- Python check: `py -3.10 <script_path>.py`
+- Package install: `py -3.10 -m pip install scikit-learn pandas numpy matplotlib seaborn`
 
 ## Structure map (top-level only, 1 line per folder)
 - `Week_3/` — Logistic regression decision thresholds (0.50 vs 0.60), confusion matrix, and manual vs scikit-learn metric calculations.
 - `Week_4/` — 5-model classification benchmark (Random Forest, KNN, Decision Tree, SVM, Naive Bayes) on UCI Diabetes dataset with 10-fold CV, ROC/AUC, and confusion matrices.
-- `Week_7/` — K-Nearest Neighbors (KNN) module: distance metrics, scaling, large-scale (N=24) manual calculations, student assignments (KM & RM), and rewritten markdown reference `MODUL_PEKAN_05_KNN.md`.
+- `Week_7/` — K-Nearest Neighbors (KNN) module: distance metrics, scaling, manual calculations ($N=24$), assignment solution document (`JAWABAN_TUGAS_MANDIRI_KNN.md`), and plots (`visualisasi_tugas_knn.png`).
 
 ## Conventions that differ from defaults / can't be inferred
 - Manual calculations MUST match scikit-learn output exactly (verify step-by-step).
@@ -36,5 +36,6 @@ Machine learning coursework repository covering supervised learning implementati
 - Omitting the tie-breaking explanation causes a standard -20% grading deduction in KNN assignments.
 
 ## Changelog (newest first, 1 line per entry, NOT a diff)
+- 2026-10-17: Computed and documented complete 6-stage solutions for Week 7 KNN assignments (KM & RM, N=24) with Python scikit-learn verification in JAWABAN_TUGAS_MANDIRI_KNN.md and generated visualisasi_tugas_knn.png.
 - 2026-10-17: Transcribed and rewritten Week 7 KNN module into pure-lesson markdown (MODUL_PEKAN_05_KNN.md) highlighting student assignments.
 - 2026-10-17: Initialized DANISH_AI_AGENT.md context file mapping repository architecture, coursework across Week 3, 4, and 7, and KNN assignment requirements.
