@@ -35,7 +35,7 @@ Machine learning coursework repository covering supervised learning implementati
 - Windows CP1252 terminal encoding can throw `UnicodeEncodeError` when printing Unicode characters (e.g. arrows, math symbols); always set UTF-8 encoding in Python scripts (`sys.stdout.reconfigure(encoding='utf-8')`).
 - Omitting the tie-breaking explanation causes a standard -20% grading deduction in KNN assignments.
 
-## Changelog (newest first, 1 line per entry, NOT a diff)
-- 2026-10-17: Computed and documented complete 6-stage solutions for Week 7 KNN assignments (KM & RM, N=24) with Python scikit-learn verification in JAWABAN_TUGAS_MANDIRI_KNN.md and generated visualisasi_tugas_knn.png.
+- 2026-10-17: Embedded direct visualisasi_tugas1_km.png and visualisasi_tugas2_rm.png into JAWABAN_TUGAS_MANDIRI_KNN.md with 2-table formats (A-X raw with Rank and sorted Rank 1-24).
+- 2026-10-17: Computed and documented complete 6-stage solutions for Week 7 KNN assignments (KM & RM, N=24) with Python scikit-learn verification in JAWABAN_TUGAS_MANDIRI_KNN.md.
 - 2026-10-17: Transcribed and rewritten Week 7 KNN module into pure-lesson markdown (MODUL_PEKAN_05_KNN.md) highlighting student assignments.
 - 2026-10-17: Initialized DANISH_AI_AGENT.md context file mapping repository architecture, coursework across Week 3, 4, and 7, and KNN assignment requirements.

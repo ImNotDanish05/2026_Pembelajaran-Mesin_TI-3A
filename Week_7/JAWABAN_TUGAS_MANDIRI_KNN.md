@@ -157,11 +157,11 @@ Tabel ini telah diurutkan dari jarak terdekat ke terjauh dengan menerapkan atura
 
 ### 2.4 Tahap 5: Visualisasi Scatter Plot
 
-Grafik sebaran data latih, letak Query $Z(6, 4)$, serta sorotan pada 7 tetangga terdekat disajikan pada gambar di bawah:
+Grafik sebaran data latih, letak Query $Z(6, 4)$, lingkaran radius $K=3, 5, 7$, serta sorotan pada 7 tetangga terdekat ditampilkan langsung pada gambar berikut:
 
-![Visualisasi K-NN](file:///D:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_7/visualisasi_tugas_knn.png)
+![Visualisasi Tugas 1: Klasifikasi Kenyamanan Ruangan](./visualisasi_tugas1_km.png)
 
-*Catatan Tampilan:* Sesuai regulasi tugas $N > 20$, hanya titik Query $Z$ dan 7 tetangga terdekat ({L, H, T, J, U, K, M}) yang dilabeli teks ID agar keterbacaan grafik optimal.
+*Catatan Tampilan:* Sesuai regulasi tugas $N > 20$, hanya titik Query $Z(6,4)$ dan 7 tetangga terdekat ({L, H, T, J, U, K, M}) yang dilabeli teks ID agar keterbacaan grafik tetap bersih dan informatif. Lingkaran putus-putus menunjukkan batas radius tetangga untuk variasi nilai $K$.
 
 ---
 
@@ -331,7 +331,11 @@ Tabel ini telah diurutkan dari jarak terdekat ke terjauh dengan menerapkan atura
 
 ### 3.4 Tahap 5: Visualisasi Scatter Plot
 
-Visualisasi sebaran data regresi beserta nilai target energi listrik (dalam gradasi warna *coolwarm*) disajikan pada gambar panel kanan di atas ([`visualisasi_tugas_knn.png`](file:///D:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_7/visualisasi_tugas_knn.png)). Label teks ID dan target hanya disematkan pada titik Query $Z$ dan Top-7 tetangga ({J, K, P, D, E, I, L}).
+Visualisasi sebaran data regresi beserta nilai target konsumsi energi listrik (skala gradasi warna *coolwarm*), lingkaran radius $K=3$ dan $K=5,7$, serta penanda Query $Z(5.5, 2.5)$ ditampilkan langsung pada gambar berikut:
+
+![Visualisasi Tugas 2: Regresi Konsumsi Energi Lab](./visualisasi_tugas2_rm.png)
+
+*Catatan Tampilan:* Sesuai regulasi tugas $N > 20$, hanya titik Query $Z(5.5, 2.5)$ dan 7 tetangga terdekat ({J, K, P, D, E, I, L}) yang dilabeli teks ID beserta nilai kWh targetnya agar keterbacaan grafik tetap optimal dan bersih. Lingkaran putus-putus menggambarkan batas radius pencarian tetangga terdekat.
 
 ---
 
