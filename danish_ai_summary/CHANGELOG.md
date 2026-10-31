@@ -1,5 +1,12 @@
 # Changelog
 
+### 2026-10-31 — Solved Week 9 Fuzzy Logic Independent Assignments in Markdown (Folio-Ready)
+- What: Created dedicated assignment solution document `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md` (481 lines) structured specifically for handwriting onto folio paper.
+- What: Fully calculated and formatted Soal 1 (Regresi Sugeno Orde Nol, N=20) with step-by-step sample calculations, 20-row table with all μ and α, MAE=1.59, and RMSE=1.91.
+- What: Fully calculated and formatted Soal 2 (Klasifikasi Berbasis Aturan, N=20) with step-by-step sample calculations, conservative tie-breaking, 20-row table, Confusion Matrix (TP=12, TN=7, FP=1, FN=0), Accuracy=95.0%, and Recall=100.0%.
+- Files: Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md, danish_ai_summary/modules/week_9_fuzzy.md.
+- Verified: Automated Python table validator confirmed 100% column syntax; Python script verified mathematical calculations across all 40 instances.
+
 ### 2026-10-31 — Generated Visual Flowchart Images & Fixed Regression Table Formatting
 - What: Replaced ASCII flowcharts with high-resolution visual diagrams: `alur_sistem_fuzzy_fis.png` (Section 7: FIS 5-stage architecture) and `fuzzy_vs_machine_learning.png` (Section 10: AI taxonomy & ANFIS).
 - What: Fixed corrupted markdown table in Section 6 (Tabel Prediksi Lengkap Seluruh Dataset Regresi) caused by raw unescaped vertical pipes `|y - ŷ|` in column header; corrected syntax using `\lvert y - \hat{y} \rvert`.

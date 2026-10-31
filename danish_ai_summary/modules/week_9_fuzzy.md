@@ -4,6 +4,7 @@
 - **Key Files:**
   - `Week_9/MODUL-07-LOGIKA FUZZY.pdf` — Original lecture module (41 pages).
   - `Week_9/MODUL_07_LOGIKA_FUZZY.md` — Transcribed and comprehensive pure markdown module.
+  - `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md` — Complete, folio-ready assignment solutions for Soal 1 (Regresi N=20) and Soal 2 (Klasifikasi N=20).
   - `Week_9/ilustrasi_segitiga_fuzzy.png` — Diagram kurva fungsi keanggotaan segitiga.
   - `Week_9/alur_sistem_fuzzy_fis.png` — Flowchart grafis arsitektur 5 tahap Fuzzy Inference System (FIS).
   - `Week_9/fuzzy_vs_machine_learning.png` — Diagram taksonomi perbandingan Logika Fuzzy vs Machine Learning vs ANFIS.
