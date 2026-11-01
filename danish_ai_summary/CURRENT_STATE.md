@@ -2,29 +2,30 @@
 Updated: 2026-11-01
 
 ## Goal in Progress
-Memverifikasi kebenaran perhitungan numerik Soal 1 dan Soal 2 pada `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md` menggunakan skrip komputasi Python independen.
+Menambahkan penjabaran hitungan manual menjadi minimal 5 sampel data untuk masing-masing soal (Soal 1 Regresi & Soal 2 Klasifikasi) pada `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md` serta memverifikasi kesesuaiannya dengan program Python `Week_9/verifikasi_tugas_fuzzy.py`.
 
 ## Done So Far
-- Dibuat dan dieksekusi skrip independen [`Week_9/verifikasi_tugas_fuzzy.py`](file:///d:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_9/verifikasi_tugas_fuzzy.py).
-- Berhasil memverifikasi 100% dari 20 baris data perhitungan Soal 1 (Regresi Sugeno Orde Nol) dan Soal 2 (Klasifikasi Fuzzy Rule-Based).
-- Seluruh nilai derajat keanggotaan ($\mu$), firing strength ($\alpha$), defuzzifikasi ($\hat{y}$), galat absolut, galat kuadrat, skor agregasi ($S_{\text{Tinggi}}, S_{\text{Rendah}}$), prediksi kelas, confusion matrix ($TP=12, TN=7, FP=1, FN=0$), serta metrik evaluasi (Akurasi $95\%$, Presisi $92{,}31\%$, Recall $100\%$, F1 $96\%$) terbukti identik presisi antara dokumen markdown dan eksekusi Python.
+- Ditambahkan sampel hitungan manual ke-5 pada Soal 1: **Data Nomor 7** ($x=24^\circ\text{C}, h=35\%$, Aktual $y=15$, Prediksi $\hat{y}=15{,}43$, Galat $|e|=0{,}43$, $e^2=0{,}1837$).
+- Ditambahkan sampel hitungan manual ke-5 pada Soal 2: **Data Nomor 13** ($r=28\%, s=60$, Aktual Rendah, Prediksi Tinggi / Kasus Konservatif False Positive $FP$).
+- Diperbarui skrip verifikasi Python [`Week_9/verifikasi_tugas_fuzzy.py`](file:///d:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_9/verifikasi_tugas_fuzzy.py) dengan modul penjabaran detail per sampel langkah demi langkah (`hitung_detail_soal_1` dan `hitung_detail_soal_2`).
+- Skrip dijalankan dan diverifikasi 100% konsisten dengan angka dan notasi matematis di markdown.
 
 ## Exactly Where I Stopped
-Semua pengujian dan verifikasi selesai dan terbukti akurat 100%.
+Semua 5 sampel manual untuk Soal 1 dan Soal 2 telah lengkap, diverifikasi, dan terdokumentasi rapi.
 
 ## Next Steps (in order)
-1. Mahasiswa dapat menyalin hasil perhitungan dari [`Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md`](file:///d:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md) ke lembar kerja kertas folio bergaris dengan keyakinan penuh.
-2. Skrip [`Week_9/verifikasi_tugas_fuzzy.py`](file:///d:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_9/verifikasi_tugas_fuzzy.py) dapat disertakan sebagai bukti pendukung komputasi jika dosen pengampu meminta kode sumber.
+1. Mahasiswa menyalin 5 sampel perhitungan manual per soal ke lembar folio bergaris beserta tabel rekap 20 baris data dan metrik evaluasi.
+2. Selesai.
 
 ## Half-Done / Uncommitted Changes
 - None.
 
 ## Findings So Far
-- Perhitungan manual di lembar jawaban sudah teruji bebas dari *rounding error* yang merusak metrik agregat.
-- Skrip Python menghasilkan nilai metrik identik hingga digit desimal keempat.
+- Data No. 7 Soal 1 memperlihatkan kondisi sejuk namun tanah kering dengan pembilang fraksi eksak $21{,}60 / 1{,}40 = 15{,}43$.
+- Data No. 13 Soal 2 memberikan justifikasi pedagogis yang kuat mengenai alasan munculnya satu-satunya *False Positive* akibat ambang batas skor kredit $60$.
 
 ## Open Questions / Waiting on the User
 - None.
 
 ## How to Verify
-- Jalankan `python Week_9/verifikasi_tugas_fuzzy.py` untuk melihat output tabel komputasi dan metrik secara langsung di terminal.
+- Jalankan `python Week_9/verifikasi_tugas_fuzzy.py` untuk melihat cetak detail 5 sampel manual serta tabel 20 baris data lengkap.

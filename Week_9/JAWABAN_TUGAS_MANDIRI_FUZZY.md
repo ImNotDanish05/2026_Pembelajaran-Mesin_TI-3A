@@ -168,7 +168,37 @@ Sistem Sugeno orde nol menggunakan luaran konstan tegas ($z_i$):
 
 ---
 
-### C. Perhitungan Data Nomor 12 (Batas Bawah Nilai Ekstrem)
+### C. Perhitungan Data Nomor 7 (Kondisi Tanah Kering Suhu Sejuk)
+**Diketahui:** Suhu $x = 24^\circ\text{C}$, Kelembapan $h = 35\%$, Lama Aktual $y = 15\text{ Menit}$.
+
+1. **Fuzzifikasi Suhu ($x = 24$):**
+   $$\mu_D(24) = \frac{40 - 24}{20} = \frac{16}{20} = 0{,}80$$
+   $$\mu_P(24) = \frac{24 - 20}{20} = \frac{4}{20} = 0{,}20$$
+
+2. **Fuzzifikasi Kelembapan Tanah ($h = 35$):**
+   $$\mu_{KR}(35) = \frac{90 - 35}{70} = \frac{55}{70} = \frac{11}{14} \approx 0{,}79$$
+   $$\mu_{KT}(35) = \frac{35 - 20}{70} = \frac{15}{70} = \frac{3}{14} \approx 0{,}21$$
+
+3. **Evaluasi Kekuatan 4 Aturan ($\alpha$):**
+   - $\alpha_1 = \min(\mu_D, \mu_{KT}) = \min(0{,}80; 0{,}21) = 0{,}21$
+   - $\alpha_2 = \min(\mu_D, \mu_{KR}) = \min(0{,}80; 0{,}79) = 0{,}79$
+   - $\alpha_3 = \min(\mu_P, \mu_{KT}) = \min(0{,}20; 0{,}21) = 0{,}20$
+   - $\alpha_4 = \min(\mu_P, \mu_{KR}) = \min(0{,}20; 0{,}79) = 0{,}20$
+
+4. **Defuzzifikasi Rata-Rata Terbobot:**
+   $$\text{Pembilang} = (0{,}21 \times 3) + (0{,}79 \times 17) + (0{,}20 \times 10) + (0{,}20 \times 28)$$
+   $$\text{Pembilang} = 0{,}63 + 13{,}43 + 2{,}00 + 5{,}60 = 21{,}66$$
+   $$\text{Penyebut} = 0{,}21 + 0{,}79 + 0{,}20 + 0{,}20 = 1{,}40$$
+   $$\hat{y}_7 = \frac{21{,}66}{1{,}40} \approx \mathbf{15{,}43\text{ Menit}}$$
+   *(Dengan nilai fraksi komputasi eksak: $\frac{21{,}60}{1{,}40} \approx 15{,}43\text{ Menit}$).*
+
+5. **Galat Prediksi Data 7:**
+   - Galat Absolut: $|y_7 - \hat{y}_7| = |15 - 15{,}43| = \mathbf{0{,}43\text{ Menit}}$
+   - Galat Kuadrat: $(0{,}43)^2 \approx \mathbf{0{,}1837}$
+
+---
+
+### D. Perhitungan Data Nomor 12 (Batas Bawah Nilai Ekstrem)
 **Diketahui:** Suhu $x = 21^\circ\text{C}$, Kelembapan $h = 90\%$, Lama Aktual $y = 3\text{ Menit}$.
 
 1. **Fuzzifikasi:**
@@ -187,7 +217,7 @@ Sistem Sugeno orde nol menggunakan luaran konstan tegas ($z_i$):
 
 ---
 
-### D. Perhitungan Data Nomor 20 (Batas Atas Nilai Ekstrem)
+### E. Perhitungan Data Nomor 20 (Batas Atas Nilai Ekstrem)
 **Diketahui:** Suhu $x = 40^\circ\text{C}$, Kelembapan $h = 20\%$, Lama Aktual $y = 28\text{ Menit}$.
 
 1. **Fuzzifikasi:**
@@ -394,7 +424,31 @@ Kombinasi aturan inferensi proposisional:
 
 ---
 
-### D. Perhitungan Data Nomor 17 (Rasio Tinggi tapi Skor Sangat Bagus)
+### D. Perhitungan Data Nomor 13 (Kasus Sikap Konservatif / False Positive)
+**Diketahui:** Rasio $r = 28\%$, Skor $s = 60$, Aktual = **Rendah**.
+
+1. **Fuzzifikasi:**
+   $$\mu_{RR}(28) = 1{,}00, \quad \mu_{RT}(28) = 0{,}00$$
+   $$\mu_{SR}(60) = \frac{80 - 60}{30} = \frac{20}{30} \approx 0{,}67, \quad \mu_{ST}(60) = \frac{60 - 50}{30} = \frac{10}{30} \approx 0{,}33$$
+
+2. **Evaluasi 4 Aturan:**
+   - $\alpha_1 = \min(\mu_{RR}, \mu_{ST}) = \min(1{,}00; 0{,}33) = 0{,}33$
+   - $\alpha_2 = \min(\mu_{RR}, \mu_{SR}) = \min(1{,}00; 0{,}67) = 0{,}67$
+   - $\alpha_3 = \min(\mu_{RT}, \mu_{ST}) = \min(0{,}00; 0{,}33) = 0{,}00$
+   - $\alpha_4 = \min(\mu_{RT}, \mu_{SR}) = \min(0{,}00; 0{,}67) = 0{,}00$
+
+3. **Agregasi Skor Kelas:**
+   $$S_{\text{Rendah}} = \alpha_1 = 0{,}33$$
+   $$S_{\text{Tinggi}} = \max(\alpha_2, \alpha_3, \alpha_4) = \max(0{,}67; 0{,}00; 0{,}00) = 0{,}67$$
+
+4. **Keputusan & Evaluasi:**
+   Karena $S_{\text{Tinggi}} (0{,}67) > S_{\text{Rendah}} (0{,}33)$, maka sistem menetapkan:
+   $$\hat{y}_{13} = \mathbf{RISIKO\ TINGGI}\quad (\text{Status: Konservatif / False Positive})$$
+   *Catatan Analisis:* Meskipun beban cicilan tergolong rendah ($r = 28\%$), riwayat skor kredit yang belum prima ($s = 60$) mengaktifkan aturan $R_2$ secara dominan (skor $0{,}67$). Sistem perbankan memilih bersikap waspada (konservatif) guna mencegah potensi kredit bermasalah di kemudian hari.
+
+---
+
+### E. Perhitungan Data Nomor 17 (Rasio Tinggi tapi Skor Sangat Bagus)
 **Diketahui:** Rasio $r = 48\%$, Skor $s = 85$, Aktual = **Tinggi**.
 
 1. **Fuzzifikasi:**

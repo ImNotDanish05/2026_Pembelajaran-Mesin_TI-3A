@@ -1,5 +1,12 @@
 # Changelog
 
+### 2026-11-01 — Expanded Manual Calculation Steps to 5 Samples per Task
+- What: Added 5th step-by-step manual calculation to Soal 1 (Data No. 7: Suhu 24, Lembap 35, y=15 -> y_hat=15.43) and Soal 2 (Data No. 13: Rasio 28, Skor 60, Aktual Rendah -> Prediksi Tinggi / Conservative False Positive).
+- What: Updated Python verification script `Week_9/verifikasi_tugas_fuzzy.py` with dedicated sample calculation printouts for all 5 instances per task.
+- Files: Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md, Week_9/verifikasi_tugas_fuzzy.py, danish_ai_summary/CURRENT_STATE.md.
+- Verified: Ran `python Week_9\verifikasi_tugas_fuzzy.py` (exit code 0); confirmed 100% precision with zero calculation discrepancy.
+
+
 ### 2026-11-01 — Verified Fuzzy Logic Assignment Calculations via Independent Python Script
 - What: Created standalone verification script `Week_9/verifikasi_tugas_fuzzy.py` to independently compute and validate all numerical values in `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md`.
 - What: Verified 100% of 20-row calculations for Soal 1 (Sugeno Regression: μ, α, ŷ, MAE=1.59, RMSE=1.91) and Soal 2 (Fuzzy Rule-Based Classification: μ, α, conservative scoring, Confusion Matrix TP=12, TN=7, FP=1, FN=0, Akurasi=95.00%, Recall=100.00%, F1=96.00%).
