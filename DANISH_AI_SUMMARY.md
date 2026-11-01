@@ -46,4 +46,4 @@ Machine learning coursework repository covering supervised learning implementati
 - `.git/` — repository version control metadata.
 - Original dataset archives or generated artifacts unless instructed.
 
-<!-- last verified: 2026-10-31 -->
+<!-- last verified: 2026-11-01 -->

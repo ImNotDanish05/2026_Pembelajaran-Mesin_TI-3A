@@ -1,5 +1,12 @@
 # Changelog
 
+### 2026-11-01 — Verified Fuzzy Logic Assignment Calculations via Independent Python Script
+- What: Created standalone verification script `Week_9/verifikasi_tugas_fuzzy.py` to independently compute and validate all numerical values in `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md`.
+- What: Verified 100% of 20-row calculations for Soal 1 (Sugeno Regression: μ, α, ŷ, MAE=1.59, RMSE=1.91) and Soal 2 (Fuzzy Rule-Based Classification: μ, α, conservative scoring, Confusion Matrix TP=12, TN=7, FP=1, FN=0, Akurasi=95.00%, Recall=100.00%, F1=96.00%).
+- Files: Week_9/verifikasi_tugas_fuzzy.py, danish_ai_summary/CURRENT_STATE.md, danish_ai_summary/CHANGELOG.md.
+- Verified: Ran `python Week_9\verifikasi_tugas_fuzzy.py` (exit code 0); all values matched the markdown tables and manual sample steps with 0 discrepancy.
+
+
 ### 2026-10-31 — Solved Week 9 Fuzzy Logic Independent Assignments in Markdown (Folio-Ready)
 - What: Created dedicated assignment solution document `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md` (481 lines) structured specifically for handwriting onto folio paper.
 - What: Fully calculated and formatted Soal 1 (Regresi Sugeno Orde Nol, N=20) with step-by-step sample calculations, 20-row table with all μ and α, MAE=1.59, and RMSE=1.91.
