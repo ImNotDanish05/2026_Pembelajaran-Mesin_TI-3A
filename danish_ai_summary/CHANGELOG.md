@@ -1,5 +1,13 @@
 # Changelog
 
+### 2026-11-03 — Authored SINTA 3 Scientific Paper on Bank Marketing Classification
+- What: Authored complete, publication-grade academic journal article in standard 2-column IEEE format for SINTA 3 indexing based on `Week_10/Penilitian_Klasifikasi.ipynb`.
+- What: Validated 22 scholarly reference DOIs/URLs live using Python (`validate_final_references.py`), confirming 100% active status (`HTTP 200 OK`).
+- What: Structured complete IMRAD manuscript: Title (ID & EN), Authors (Danish Mahdi & Setyawan Wibisono, Polines), Abstract (ID & EN), Pendahuluan, Tinjauan Pustaka, Metodologi, Hasil & Pembahasan (4 tables, 3 figures, 5-fold CV), Kesimpulan, and 22 IEEE References.
+- Files: Week_10/jurnal/Klasifikasi.docx, Week_10/jurnal/Klasifikasi_SINTA3_Final.docx, Week_10/jurnal/NASKAH_JURNAL_SINTA3.md, Week_10/jurnal/generate_sinta3_paper.py.
+- Verified: Ran Python docx builder generating 108 paragraphs, 4 tables, 3 images across 4 sections; inspected docx structure and verified exact metric alignment with notebook.
+
+
 ### 2026-11-01 — Expanded Manual Calculation Steps to 5 Samples per Task
 - What: Added 5th step-by-step manual calculation to Soal 1 (Data No. 7: Suhu 24, Lembap 35, y=15 -> y_hat=15.43) and Soal 2 (Data No. 13: Rasio 28, Skor 60, Aktual Rendah -> Prediksi Tinggi / Conservative False Positive).
 - What: Updated Python verification script `Week_9/verifikasi_tugas_fuzzy.py` with dedicated sample calculation printouts for all 5 instances per task.

@@ -2,30 +2,42 @@
 Updated: 2026-11-03
 
 ## Goal in Progress
-Menyusun naskah artikel ilmiah berstandar SINTA 3 berdasarkan eksperimen pada `Week_10/Penilitian_Klasifikasi.ipynb`.
+Selesai: Menyusun naskah artikel ilmiah berstandar SINTA 3 lengkap (2 kolom format IEEE) berdasarkan eksperimen pada `Week_10/Penilitian_Klasifikasi.ipynb`.
 
 ## Done So Far
-- Menerima preferensi pengguna: (1A) Layout 2-kolom formal, (2A) Metadata penulis anonim/placeholder, (3B) Penulisan & pemolesan komprehensif naskah dari awal agar nada akademis seragam, (4A) Sitasi IEEE numerik.
-- Menjalankan pengujian konektivitas HTTP secara langsung via Python (`validate_final_references.py` dan `test_batch_urls.py`) untuk memverifikasi tautan referensi ilmiah.
-- Menemukan beberapa domain OJS/portal yang memicu HTTP 403 (Cloudflare/WAF) atau HTTP 404/503, dan menggantikannya dengan referensi primer kredibel bereputasi tinggi (Elsevier, Springer, PLOS ONE, JMLR, arXiv, Jurnal RESTI, dan Khazanah Informatika) yang 100% terbukti berstatus HTTP 200 OK (22 referensi terverifikasi).
+- Memeriksa dan menganalisis seluruh alur kode serta hasil numerik `Week_10/Penilitian_Klasifikasi.ipynb` (4 model KNN/DT/NB/SVM, seleksi fitur Pearson 51 -> 43, validasi hold-out 80:20 dan Stratified 5-Fold Cross Validation).
+- Melakukan verifikasi live via skrip Python terhadap 22 tautan/DOI referensi ilmiah (seluruhnya 100% menghasilkan status `HTTP 200 OK`).
+- Mengekstrak 3 aset visual dari draft naskah sebelumnya (`assets/image1.png` Heatmap, `assets/image2.png` Confusion Matrix, `assets/image3.png` ROC Curve).
+- Menyusun naskah artikel ilmiah utuh standar SINTA 3:
+  - Judul bilingual (Indonesia & Inggris).
+  - Metadata penulis: Danish Mahdi (adi.43324009@mhs.polines.ac.id) & Setyawan Wibisono, S.Kom., M.Cs. (setyasonny@gmail.com), Jurusan Teknik Elektro, Politeknik Negeri Semarang.
+  - Abstrak & Kata Kunci bilingual (ID & EN).
+  - 1. PENDAHULUAN (latar belakang, urgensi imbalanced data & telemarketing, peranan Pearson correlation, rumusan masalah).
+  - 2. TINJAUAN PUSTAKA (kajian empiris Bank Marketing, filter feature selection, algoritma KNN/DT/NB/SVM, evaluasi multi-metrik).
+  - 3. METODOLOGI PENELITIAN (dataset 45.211 instance, One-Hot Encoding, StandardScaler, formula korelasi Pearson, konfigurasi model, hold-out 80:20 & 5-fold CV).
+  - 4. HASIL DAN PEMBAHASAN (analisis karakteristik data, reduksi 15,69% fitur, evaluasi sebelum & sesudah FS, kurva ROC, confusion matrix, heatmap korelasi, tabel 5-fold CV, dan implikasi manajerial perbankan).
+  - 5. KESIMPULAN (sintesis temuan, rekomendasi bisnis, limitasi durasi & korelasi linear, saran riset lanjutan).
+  - DAFTAR PUSTAKA (22 referensi IEEE terverifikasi).
+- Mengompilasi naskah ke berkas Word `.docx` 2 kolom rapi di `Week_10/jurnal/Klasifikasi.docx` (serta `Klasifikasi_SINTA3_Final.docx`) dengan cadangan draft awal di `Klasifikasi_original_draft.docx`.
+- Menyediakan salinan teks artikel dalam format Markdown di `Week_10/jurnal/NASKAH_JURNAL_SINTA3.md`.
 
 ## Exactly Where I Stopped
-Menyajikan daftar 22 referensi berstatus HTTP 200 OK beserta hasil pengujian skrip Python kepada pengguna sebelum mulai menulis dokumen jurnal.
+Seluruh penyusunan naskah artikel ilmiah SINTA 3 telah selesai, diverifikasi strukturnya, dan siap digunakan pengguna untuk submisi / laporan.
 
 ## Next Steps (in order)
-1. Menunggu konfirmasi / lampu hijau dari pengguna untuk daftar referensi.
-2. Menyiapkan skrip Python generator DOCX untuk menyusun dokumen naskah lengkap (Judul, Abstrak bilingual, IMRAD 1–5, Gambar, Tabel, Daftar Pustaka IEEE).
-3. Melakukan verifikasi struktur dan konten jurnal.
+1. Mahasiswa / Dosen me-review naskah `.docx` atau `.md`.
+2. Selesai.
 
 ## Half-Done / Uncommitted Changes
-- File hasil pengujian tersimpan di `scratch/final_verified_references.json`.
+- None.
 
 ## Findings So Far
-- Dari puluhan URL kandidat, URL dengan proteksi WAF ketat atau direktori OJS usang memicu HTTP 403/404/503.
-- Telah difilter 22 referensi definitif yang lolos uji skrip Python dengan status HTTP 200 OK tanpa kendala redirect/challenge.
+- Naskah memenuhi standar IMRAD formal 2 kolom dengan 4 tabel (APA/IEEE 3-line style) dan 3 visualisasi grafik.
+- Seluruh 22 referensi memiliki tautan/DOI aktif terverifikasi `HTTP 200`.
 
 ## Open Questions / Waiting on the User
-- Konfirmasi persetujuan pengguna terhadap daftar 22 referensi terverifikasi sebelum masuk ke tahap penulisan jurnal.
+- None.
 
 ## How to Verify
-- Jalankan skrip `python3 scratch/validate_final_references.py` untuk melihat pengujian live ke-22 tautan.
+- Buka dan periksa dokumen `Week_10/jurnal/Klasifikasi.docx` menggunakan Microsoft Word atau LibreOffice.
+- Periksa konsistensi teks pada `Week_10/jurnal/NASKAH_JURNAL_SINTA3.md`.

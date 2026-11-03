@@ -29,6 +29,7 @@ Machine learning coursework repository covering supervised learning implementati
 - `Week_7/` — K-Nearest Neighbors (KNN) module: distance metrics, scaling, manual calculations ($N=24$), assignment solution document (`JAWABAN_TUGAS_MANDIRI_KNN.md`), and plots (`visualisasi_tugas_knn.png`).
 - `Week_8/` — Feature Selection (`FiturSelection.ipynb`).
 - `Week_9/` — Fuzzy Logic module (`MODUL_07_LOGIKA_FUZZY.md`, `MODUL-07-LOGIKA FUZZY.pdf`).
+- `Week_10/` — Bank Marketing classification benchmark (KNN, DT, NB, SVM) with Pearson Correlation Feature Selection (51 -> 43 features), 5-Fold Stratified Cross-Validation, and SINTA 3 journal article (`jurnal/Klasifikasi.docx`, `NASKAH_JURNAL_SINTA3.md`).
 
 ## Notes index (what to read when)
 | Need | Read |
