@@ -1,31 +1,31 @@
 # Current State
-Updated: 2026-11-01
+Updated: 2026-11-03
 
 ## Goal in Progress
-Menambahkan penjabaran hitungan manual menjadi minimal 5 sampel data untuk masing-masing soal (Soal 1 Regresi & Soal 2 Klasifikasi) pada `Week_9/JAWABAN_TUGAS_MANDIRI_FUZZY.md` serta memverifikasi kesesuaiannya dengan program Python `Week_9/verifikasi_tugas_fuzzy.py`.
+Menyusun naskah artikel ilmiah berstandar SINTA 3 berdasarkan eksperimen pada `Week_10/Penilitian_Klasifikasi.ipynb`.
 
 ## Done So Far
-- Ditambahkan sampel hitungan manual ke-5 pada Soal 1: **Data Nomor 7** ($x=24^\circ\text{C}, h=35\%$, Aktual $y=15$, Prediksi $\hat{y}=15{,}43$, Galat $|e|=0{,}43$, $e^2=0{,}1837$).
-- Ditambahkan sampel hitungan manual ke-5 pada Soal 2: **Data Nomor 13** ($r=28\%, s=60$, Aktual Rendah, Prediksi Tinggi / Kasus Konservatif False Positive $FP$).
-- Diperbarui skrip verifikasi Python [`Week_9/verifikasi_tugas_fuzzy.py`](file:///d:/Project/Kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_9/verifikasi_tugas_fuzzy.py) dengan modul penjabaran detail per sampel langkah demi langkah (`hitung_detail_soal_1` dan `hitung_detail_soal_2`).
-- Skrip dijalankan dan diverifikasi 100% konsisten dengan angka dan notasi matematis di markdown.
+- Menerima preferensi pengguna: (1A) Layout 2-kolom formal, (2A) Metadata penulis anonim/placeholder, (3B) Penulisan & pemolesan komprehensif naskah dari awal agar nada akademis seragam, (4A) Sitasi IEEE numerik.
+- Menjalankan pengujian konektivitas HTTP secara langsung via Python (`validate_final_references.py` dan `test_batch_urls.py`) untuk memverifikasi tautan referensi ilmiah.
+- Menemukan beberapa domain OJS/portal yang memicu HTTP 403 (Cloudflare/WAF) atau HTTP 404/503, dan menggantikannya dengan referensi primer kredibel bereputasi tinggi (Elsevier, Springer, PLOS ONE, JMLR, arXiv, Jurnal RESTI, dan Khazanah Informatika) yang 100% terbukti berstatus HTTP 200 OK (22 referensi terverifikasi).
 
 ## Exactly Where I Stopped
-Semua 5 sampel manual untuk Soal 1 dan Soal 2 telah lengkap, diverifikasi, dan terdokumentasi rapi.
+Menyajikan daftar 22 referensi berstatus HTTP 200 OK beserta hasil pengujian skrip Python kepada pengguna sebelum mulai menulis dokumen jurnal.
 
 ## Next Steps (in order)
-1. Mahasiswa menyalin 5 sampel perhitungan manual per soal ke lembar folio bergaris beserta tabel rekap 20 baris data dan metrik evaluasi.
-2. Selesai.
+1. Menunggu konfirmasi / lampu hijau dari pengguna untuk daftar referensi.
+2. Menyiapkan skrip Python generator DOCX untuk menyusun dokumen naskah lengkap (Judul, Abstrak bilingual, IMRAD 1–5, Gambar, Tabel, Daftar Pustaka IEEE).
+3. Melakukan verifikasi struktur dan konten jurnal.
 
 ## Half-Done / Uncommitted Changes
-- None.
+- File hasil pengujian tersimpan di `scratch/final_verified_references.json`.
 
 ## Findings So Far
-- Data No. 7 Soal 1 memperlihatkan kondisi sejuk namun tanah kering dengan pembilang fraksi eksak $21{,}60 / 1{,}40 = 15{,}43$.
-- Data No. 13 Soal 2 memberikan justifikasi pedagogis yang kuat mengenai alasan munculnya satu-satunya *False Positive* akibat ambang batas skor kredit $60$.
+- Dari puluhan URL kandidat, URL dengan proteksi WAF ketat atau direktori OJS usang memicu HTTP 403/404/503.
+- Telah difilter 22 referensi definitif yang lolos uji skrip Python dengan status HTTP 200 OK tanpa kendala redirect/challenge.
 
 ## Open Questions / Waiting on the User
-- None.
+- Konfirmasi persetujuan pengguna terhadap daftar 22 referensi terverifikasi sebelum masuk ke tahap penulisan jurnal.
 
 ## How to Verify
-- Jalankan `python Week_9/verifikasi_tugas_fuzzy.py` untuk melihat cetak detail 5 sampel manual serta tabel 20 baris data lengkap.
+- Jalankan skrip `python3 scratch/validate_final_references.py` untuk melihat pengujian live ke-22 tautan.
