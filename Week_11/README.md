@@ -1,5 +1,8 @@
 # Sumber Data / Atribusi
 
-File `emisiCO2.xlsx` bersumber dari SIPONGI KEMENHUT.
+Seluruh data pada folder ini bersumber dari **SIPONGI KEMENHUT**.
 
-- **URL Sumber**: https://sipongi.gakkum.kehutanan.go.id/emisi-co2
+| File | Data | Sumber |
+|---|---|---|
+| `emisiCO2.xlsx` | Emisi CO2 karhutla per provinsi, tahun 2023 | https://sipongi.gakkum.kehutanan.go.id/emisi-co2 |
+| `luas-karhutla-provinsi.xlsx` | Luas kebakaran hutan dan lahan (ha) per provinsi, tahun 2023 | https://sipongi.gakkum.kehutanan.go.id |
