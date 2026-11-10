@@ -48,13 +48,15 @@ Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/
     - `fig08_silhouette_S2.png`: label sumbu Y bersih `K1` s/d `K7`, garis rata-rata 0,428 jelas.
     - Semua 10 figure (300 DPI) dan 5 file CSV sinkron 100% dengan `Main.ipynb`.
 - STATUS: Eksperimen clustering dan penulisan naskah jurnal ilmiah standar SINTA 3 SELESAI PENUH.
-- METADATA PENULIS (Diperbarui sesuai instruksi user):
-  - Penulis: Danish Mahdi¹*, Setyawan Wibisono²
-  - Afiliasi: Program Studi D4 Teknologi Rekayasa Komputer, Jurusan Teknik Elektro, Politeknik Negeri Semarang, Semarang, Indonesia
-  - Email Korespondensi: adi.43324009@mhs.polines.ac.id, setyasonny@gmail.com
-- NASKAH JURNAL ILMIAH SINTA 3:
-  - Dokumen Word: `Week_11/catatan/Artikel_Jurnal_SINTA3_Clustering_Karhutla.docx` (1.6 MB) diperbarui dengan identitas resmi.
-  - Naskah Markdown: `Week_11/catatan/NASKAH_JURNAL_CLUSTERING_SINTA3.md` diperbarui dengan identitas resmi.
+- PENELITIAN BARU (Time Series Forecasting Bengkulu Menuju 2027):
+  - Dataset: `Week_11/Time_Series/luas-karhutla-provinsi.xlsx` (kolom 1997 s/d 2026, 30 observasi tahunan).
+  - Target Tugas Dosen:
+    1. Memprediksi luas kebakaran hutan dan lahan tahun 2027.
+    2. Khusus Provinsi Bengkulu (Kode Wilayah 17).
+    3. Deret waktu 30 tahun (1997–2026).
+  - Karakteristik Data Bengkulu: N=30 tahun, puncak 2006 = 8.971 ha, tren terkini stabil <400 ha (2023: 75,94 ha; 2024: 355,05 ha; 2025: 157,81 ha; 2026: 125,15 ha).
+  - Prompt Google Colab AI Agent: Disimpan di artifact `prompt_colab_agent_timeseries_bengkulu.md` (komparasi 5 model: ARIMA, Holt-Winters, SVR, Random Forest, Polynomial Deg 2; evaluasi RMSE/MAE/MAPE/R2, proyeksi 2027 + 95% CI).
+  - STATUS: Menunggu user menjalankan prompt di Google Colab.
   - Daftar Pustaka Audit: `Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md` (26 referensi, 100% lolos HTTP 200/202).
   - Skrip Generator: `Week_11/catatan/generate_clustering_paper.py`.
 - HASIL PENELITIAN KUNCI:
