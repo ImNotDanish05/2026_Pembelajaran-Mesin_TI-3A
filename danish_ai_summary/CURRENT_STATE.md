@@ -41,12 +41,13 @@ Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/
 - REVIEW Main.ipynb v1 hasil agent Colab (2026-11-10, 14 sel): cleaning/merge/DKI/emisi_per_ha BENAR (angka cocok dgn cek stdlib). MASALAH: tanpa log1p sama sekali (scaling pada data mentah); K=3 "diasumsikan" (kebetulan Silhouette S2 mentah max di K=3 = 0,587); S1 mentah Silhouette 0,875 @K=2 = artefak 4 provinsi ekstrem; hanya inertia+silhouette, K 2..7, n_init=10; tidak ada tabel metrik antar algoritma/ARI/dendrogram/silhouette plot; profil cuma mean (cluster 0 = 27 provinsi, 1 = 6 luas besar, 2 = 4 intensitas tinggi: Riau, Sumbar, Papua Tengah, Sumut); scatter tanpa label; tanpa sel sumber data, validasi Total, simpan figure, kesimpulan.
 - Prompt revisi dibuat: artifact `prompt_revisi_colab_agent.md` (9 poin). DIGANTIKAN oleh `prompt_colab_agent_v2.md` (user minta lebih tegas & detail karena agent Colab-nya butuh arahan jelas).
 - Prompt v2: rebuild sel 2–30 (sel 0–1 dipertahankan), aturan W1–W9 / D1–D8, kode helper (ke_angka, evaluasi_k, pilih_k [min size ≥2, Silhouette max, tie ≤0,02 → DBI terkecil], jalankan_model, urutkan_label, penamaan tertil), output ke `output/` + 10 figure fig01–fig10 + zip `output_week11.zip`. 9 blok kode lolos `ast.parse` (belum dijalankan; sklearn tidak ada lokal).
-- REVIEW OUTPUT v2 (`Week_11/output_week11/`, 5 CSV + 10 PNG; 2026-11-10). `Main.ipynb` di repo MASIH versi lama (07:59) → minta user upload notebook baru untuk cek markdown interpretasi/ARI/checklist.
-  - S1: K=2 [22,15], Sil 0,596, ketiga algoritma identik. S1 mentah K=2 [33,4] Sil 0,875 (artefak outlier, terbukti).
-  - S2: K=7 (Sil naik terus thd K: 0,333/0,386/0,377/0,405/0,387/0,428/0,445; K=6 & 8 gugur krn singleton) → struktur lemah-sedang, tidak ada elbow jelas. Final K-Means Sil 0,428 DBI 0,671 CH 33,6 ukuran [7,6,6,6,4,4,4]. Ward 0,358 & GMM 0,236 punya singleton = Banten (log_luas 0,70 vs berikutnya 4,34).
-  - Klaster 7 (Jatim, Kalbar, Kalsel, Kalteng, Kaltim, Sumsel) = 81,4% emisi, 59,4% luas. Klaster 6 (Jabar, Maluku, NTB, NTT, Papua Selatan, Sulteng, Sultra) = 35,1% luas tapi 12,0% emisi. Klaster 4 (Papua Tengah, Riau, Sumbar, Sumut) intensitas median 379, 1,5% luas, 3,7% emisi.
-  - MASALAH: (1) penamaan tertil (desainku) menyesatkan: "Intensitas Tinggi" utk median 161/218/379, Klaster 1 tinggi krn luas sangat kecil (Banten 1 ha); (2) fig07 hanya 3 centroid (harusnya 7; kemungkinan groupby salah), legenda tidak urut; (3) fig08 sumbu y angka 0–100 tak bermakna, ada sampel negatif di klaster 3 & 7; (4) file lama `Week_11/hasil_clustering_karhutla_emisi.csv` (v1) masih ada.
-  - Menunggu keputusan user soal K S2 (pertahankan 7 vs ubah) sebelum buat prompt perbaikan.
+- REVIEW OUTPUT v3 (`Week_11/output_week11/`, 2026-11-10 08:20):
+  - User memperbarui Cell 25 di `Main.ipynb` & me-re-export `output_week11`.
+  - HASIL SEMPURNA:
+    - `fig07_scatter_klaster_S2.png`: 7 centroid hitam 'X' presisi di pusat 7 klaster, legenda terurut rapi Klaster 1 s/d Klaster 7, label adjustText rapi.
+    - `fig08_silhouette_S2.png`: label sumbu Y bersih `K1` s/d `K7`, garis rata-rata 0,428 jelas.
+    - Semua 10 figure (300 DPI) dan 5 file CSV sinkron 100% dengan `Main.ipynb`.
+- STATUS: Eksperimen clustering selesai & tervalidasi penuh. SIAP UNTUK PEMBUATAN NASKAH JURNAL.
 
 ## How to Verify
 - Periksa keberadaan dan isi file [Week_11/README.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_11/README.md).
