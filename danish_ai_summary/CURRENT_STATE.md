@@ -47,9 +47,26 @@ Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/
     - `fig07_scatter_klaster_S2.png`: 7 centroid hitam 'X' presisi di pusat 7 klaster, legenda terurut rapi Klaster 1 s/d Klaster 7, label adjustText rapi.
     - `fig08_silhouette_S2.png`: label sumbu Y bersih `K1` s/d `K7`, garis rata-rata 0,428 jelas.
     - Semua 10 figure (300 DPI) dan 5 file CSV sinkron 100% dengan `Main.ipynb`.
-- STATUS: Eksperimen clustering selesai & tervalidasi penuh.
-- DAFTAR PUSTAKA: 26 referensi jurnal bereputasi (SINTA 2/3, Nature, Copernicus, Elsevier, Springer, PLOS ONE) telah diverifikasi via live HTTP audit (100% bebas dari 404/403) dan didokumentasikan di `Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md`.
-- SIAP UNTUK PEMBUATAN NASKAH JURNAL ILMIAH SINTA 3.
+- STATUS: Eksperimen clustering dan penulisan naskah jurnal ilmiah standar SINTA 3 SELESAI PENUH.
+- METADATA PENULIS (Diperbarui sesuai instruksi user):
+  - Penulis: Danish Mahdi¹*, Setyawan Wibisono²
+  - Afiliasi: Program Studi D4 Teknologi Rekayasa Komputer, Jurusan Teknik Elektro, Politeknik Negeri Semarang, Semarang, Indonesia
+  - Email Korespondensi: adi.43324009@mhs.polines.ac.id, setyasonny@gmail.com
+- NASKAH JURNAL ILMIAH SINTA 3:
+  - Dokumen Word: `Week_11/catatan/Artikel_Jurnal_SINTA3_Clustering_Karhutla.docx` (1.6 MB) diperbarui dengan identitas resmi.
+  - Naskah Markdown: `Week_11/catatan/NASKAH_JURNAL_CLUSTERING_SINTA3.md` diperbarui dengan identitas resmi.
+  - Daftar Pustaka Audit: `Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md` (26 referensi, 100% lolos HTTP 200/202).
+  - Skrip Generator: `Week_11/catatan/generate_clustering_paper.py`.
+- HASIL PENELITIAN KUNCI:
+  - Dataset: SIPONGI Kemenhut 2023 (1.161.192,90 ha luas karhutla; 182.714.438,00 ton CO2e emisi; 38 provinsi). DKI Jakarta dieksklusikan secara metodologis (0/0 ha & emisi) menjadi N=37 sampel aktif.
+  - Ortogonalitas Dimensi: log luas vs log emisi redundan (r=0,955), sedangkan log luas vs log intensitas emisi independen/ortogonal (r=-0,018).
+  - Model Terbaik: K-Means Skenario 2 (K=7, Silhouette 0,4285, DBI 0,6712, CH 33,5641) mengungguli Hierarchical Ward (0,3582) dan GMM (0,2359).
+  - 7 Tipologi Terbentuk:
+    - Klaster 7 (Episentrum Karhutla Masif 81,4% emisi, 59,4% luas: Jatim, Kalbar, Kalsel, Kalteng, Kaltim, Sumsel).
+    - Klaster 6 (Savana/Mineral Luas Intensitas Rendah 35,1% luas, 12,0% emisi: NTB, NTT, Papua Selatan, Maluku, Sulteng, Sultra, Jabar).
+    - Klaster 4 (Karhutla Terbatas Emisi Ekstrem / Gambut: Riau, Sumbar, Sumut, Papua Tengah; luas 1,5% tapi median intensitas 379,19 ton/ha).
+    - Klaster 1, 2, 3, 5 (Risiko Rendah-Sedang).
+    - Kategori Khusus (Nihil Karhutla: DKI Jakarta).
 
 ## How to Verify
 - Periksa keberadaan dan isi file [Week_11/README.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_11/README.md).
