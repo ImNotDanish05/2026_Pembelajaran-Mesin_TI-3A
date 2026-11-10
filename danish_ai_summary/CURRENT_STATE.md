@@ -47,7 +47,9 @@ Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/
     - `fig07_scatter_klaster_S2.png`: 7 centroid hitam 'X' presisi di pusat 7 klaster, legenda terurut rapi Klaster 1 s/d Klaster 7, label adjustText rapi.
     - `fig08_silhouette_S2.png`: label sumbu Y bersih `K1` s/d `K7`, garis rata-rata 0,428 jelas.
     - Semua 10 figure (300 DPI) dan 5 file CSV sinkron 100% dengan `Main.ipynb`.
-- STATUS: Eksperimen clustering selesai & tervalidasi penuh. SIAP UNTUK PEMBUATAN NASKAH JURNAL.
+- STATUS: Eksperimen clustering selesai & tervalidasi penuh.
+- DAFTAR PUSTAKA: 26 referensi jurnal bereputasi (SINTA 2/3, Nature, Copernicus, Elsevier, Springer, PLOS ONE) telah diverifikasi via live HTTP audit (100% bebas dari 404/403) dan didokumentasikan di `Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md`.
+- SIAP UNTUK PEMBUATAN NASKAH JURNAL ILMIAH SINTA 3.
 
 ## How to Verify
 - Periksa keberadaan dan isi file [Week_11/README.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_11/README.md).
