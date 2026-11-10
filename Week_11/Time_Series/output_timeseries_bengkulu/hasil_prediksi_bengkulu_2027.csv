@@ -1,0 +1,2 @@
+Provinsi,Tahun_Prediksi,Model_Terbaik,Prediksi_Luas_ha,CI_Bawah_95_ha,CI_Atas_95_ha,Realisasi_2026_ha,Status_Tren
+Bengkulu,2027,ARIMA,487.65,0.0,3924.65,125.15,Meningkat

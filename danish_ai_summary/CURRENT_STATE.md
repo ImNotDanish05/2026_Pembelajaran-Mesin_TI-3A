@@ -48,15 +48,23 @@ Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/
     - `fig08_silhouette_S2.png`: label sumbu Y bersih `K1` s/d `K7`, garis rata-rata 0,428 jelas.
     - Semua 10 figure (300 DPI) dan 5 file CSV sinkron 100% dengan `Main.ipynb`.
 - STATUS: Eksperimen clustering dan penulisan naskah jurnal ilmiah standar SINTA 3 SELESAI PENUH.
-- PENELITIAN BARU (Time Series Forecasting Bengkulu Menuju 2027):
-  - Dataset: `Week_11/Time_Series/luas-karhutla-provinsi.xlsx` (kolom 1997 s/d 2026, 30 observasi tahunan).
-  - Target Tugas Dosen:
-    1. Memprediksi luas kebakaran hutan dan lahan tahun 2027.
-    2. Khusus Provinsi Bengkulu (Kode Wilayah 17).
-    3. Deret waktu 30 tahun (1997–2026).
-  - Karakteristik Data Bengkulu: N=30 tahun, puncak 2006 = 8.971 ha, tren terkini stabil <400 ha (2023: 75,94 ha; 2024: 355,05 ha; 2025: 157,81 ha; 2026: 125,15 ha).
-  - Prompt Google Colab AI Agent: Disimpan di artifact `prompt_colab_agent_timeseries_bengkulu.md` (komparasi 5 model: ARIMA, Holt-Winters, SVR, Random Forest, Polynomial Deg 2; evaluasi RMSE/MAE/MAPE/R2, proyeksi 2027 + 95% CI).
-  - STATUS: Menunggu user menjalankan prompt di Google Colab.
+- PENELITIAN TIME SERIES BENGKULU SELESAI DIEKSEKUSI (2026-11-10 09:52):
+  - Notebook: `Week_11/Time_Series/Main_TimeSeries_Bengkulu.ipynb` (dan `Untitled21.ipynb`).
+  - Folder output: `Week_11/Time_Series/output_timeseries_bengkulu/` (3 CSV + 4 figur 300 DPI).
+  - HASIL EKSPERIMEN:
+    - Uji ADF: ADF Stat = -3.4044, p-value = 0.0108 (Stasioner pada data level, p < 0.05).
+    - Model Terbaik: ARIMA(0,1,1) dengan AIC = 435.47.
+    - Evaluasi Testing Set (2022–2026):
+      1. ARIMA: RMSE = 589.75 ha, MAE = 509.05 ha, MAPE = 264.50%
+      2. SVR (RBF): RMSE = 595.78 ha, MAE = 417.21 ha, MAPE = 176.69%
+      3. Holt-Winters: RMSE = 601.18 ha, MAE = 544.03 ha, MAPE = 298.44%
+      4. Random Forest: RMSE = 646.23 ha, MAE = 570.07 ha, MAPE = 349.35%
+      5. Polynomial Reg (Deg 2): RMSE = 747.90 ha, MAE = 466.79 ha, MAPE = 100.0%
+    - PREDIKSI TAHUN 2027:
+      - Estimasi Luas Karhutla 2027: 487.65 Hektare
+      - 95% Confidence Interval: [0.00 ha s/d 3.924.65 ha]
+      - Tren: Meningkat moderat dari realisasi 2026 (125.15 ha) seiring siklus 4-5 tahunan pasca-lonjakan 2022 (1.620 ha).
+  - STATUS: Siap untuk penyusunan artikel jurnal ilmiah Time Series SINTA 3 Bengkulu 2027.
   - Daftar Pustaka Audit: `Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md` (26 referensi, 100% lolos HTTP 200/202).
   - Skrip Generator: `Week_11/catatan/generate_clustering_paper.py`.
 - HASIL PENELITIAN KUNCI:
