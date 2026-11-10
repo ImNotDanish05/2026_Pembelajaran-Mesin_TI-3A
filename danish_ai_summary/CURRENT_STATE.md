@@ -64,7 +64,8 @@ Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/
       - Estimasi Luas Karhutla 2027: 487.65 Hektare
       - 95% Confidence Interval: [0.00 ha s/d 3.924.65 ha]
       - Tren: Meningkat moderat dari realisasi 2026 (125.15 ha) seiring siklus 4-5 tahunan pasca-lonjakan 2022 (1.620 ha).
-  - STATUS: Siap untuk penyusunan artikel jurnal ilmiah Time Series SINTA 3 Bengkulu 2027.
+  - DAFTAR PUSTAKA TIME SERIES: 24 referensi jurnal bereputasi (SINTA 2/3, JSS, Springer, Nature, PLOS ONE, Elsevier, Copernicus) telah diverifikasi via live HTTP audit (100% bebas dari 404/403) dan didokumentasikan di `Week_11/Time_Series/catatan/DAFTAR_PUSTAKA_TIME_SERIES.md`.
+  - STATUS: Siap untuk penyusunan naskah jurnal ilmiah Time Series SINTA 3 Bengkulu 2027 (Word .docx dan Markdown .md).
   - Daftar Pustaka Audit: `Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md` (26 referensi, 100% lolos HTTP 200/202).
   - Skrip Generator: `Week_11/catatan/generate_clustering_paper.py`.
 - HASIL PENELITIAN KUNCI:
