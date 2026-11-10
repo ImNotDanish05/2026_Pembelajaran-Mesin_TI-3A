@@ -1,0 +1,8 @@
+nama_klaster_S2,Jumlah,Provinsi,Emisi_Mean,Emisi_Median,Luas_Mean,Luas_Median,Intensitas_Mean,Intensitas_Median
+"Klaster 1: Luas Rendah, Intensitas Tinggi",4,"Banten, Bengkulu, Papua Barat, Yogyakarta",16999.25,14882.5,113.9725,97.925,171.3141053153,161.40149026028928
+"Klaster 2: Luas Rendah, Intensitas Sedang",6,"Gorontalo, Kepulauan Riau, Maluku Utara, Papua, Papua Pegunungan, Sulawesi Barat",71491.16666666667,47760.5,909.3666666666667,695.2950000000001,77.801960448569,75.15606259928464
+"Klaster 3: Luas Sedang, Intensitas Rendah",4,"Bali, Papua Barat Daya, Sulawesi Selatan, Sulawesi Utara",104401.75,92555.5,2884.0525000000002,2271.355,33.2518620817727,35.06647058567185
+"Klaster 4: Luas Sedang, Intensitas Tinggi",4,"Papua Tengah, Riau, Sumatera Barat, Sumatera Utara",1701228.25,1462629.0,4214.955,3739.52,369.9448582553657,379.18591891690454
+"Klaster 5: Luas Sedang, Intensitas Sedang",6,"Aceh, Bangka Belitung, Jambi, Jawa Tengah, Kalimantan Utara, Lampung",725387.6666666666,784625.5,5083.0233333333335,5629.825,153.3380020031386,153.19355633470246
+"Klaster 6: Luas Tinggi, Intensitas Rendah",7,"Jawa Barat, Maluku, Nusa Tenggara Barat, Nusa Tenggara Timur, Papua Selatan, Sulawesi Tengah, Sulawesi Tenggara",3137248.5714285714,2329867.0,58167.37142857142,45999.39,55.243027726272814,54.32606205747606
+"Klaster 7: Luas Tinggi, Intensitas Tinggi",6,"Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah, Kalimantan Timur, Sumatera Selatan",24780318.0,23523799.5,114869.17333333334,121965.64499999999,212.81916328342382,218.53743255114705
