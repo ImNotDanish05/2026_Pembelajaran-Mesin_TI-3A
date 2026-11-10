@@ -29,7 +29,8 @@ Machine learning coursework repository covering supervised learning implementati
 - `Week_7/` — K-Nearest Neighbors (KNN) module: distance metrics, scaling, manual calculations ($N=24$), assignment solution document (`JAWABAN_TUGAS_MANDIRI_KNN.md`), and plots (`visualisasi_tugas_knn.png`).
 - `Week_8/` — Feature Selection (`FiturSelection.ipynb`).
 - `Week_9/` — Fuzzy Logic module (`MODUL_07_LOGIKA_FUZZY.md`, `MODUL-07-LOGIKA FUZZY.pdf`).
-- `Week_10/` — Bank Marketing classification benchmark (KNN, DT, NB, SVM) with Pearson Correlation Feature Selection (51 -> 43 features), 5-Fold Stratified Cross-Validation, and SINTA 3 journal article (`jurnal/Klasifikasi.docx`, `NASKAH_JURNAL_SINTA3.md`).
+- `Week_10/` — Research and SINTA 3 Journal publications for Classification (Bank Marketing UCI with Pearson Selection 51->43, KNN, DT, NB, SVM, 5-Fold CV: `jurnal/Klasifikasi.docx`) and Regression (Advertising Dataset multi-channel TV/Radio/Newspaper with Simple Linear, Multiple Linear, Polynomial Regression Degree 2, 10-Fold CV: `jurnal/Regresi.docx`, `jurnal/NASKAH_JURNAL_REGRESI_SINTA3.md`).
+- `Week_11/` — Dataset emisi CO2 (`emisiCO2.xlsx`) bersumber dari SIPONGI KEMENHUT beserta atribusi / kredit (`README.md`).
 
 ## Notes index (what to read when)
 | Need | Read |
