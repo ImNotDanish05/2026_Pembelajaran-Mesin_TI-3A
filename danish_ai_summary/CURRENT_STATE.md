@@ -2,19 +2,27 @@
 Updated: 2026-11-10
 
 ## Goal in Progress
-Selesai: Penambahan file dokumentasi atribusi dan kredit data `Week_11/README.md` untuk file `Week_11/emisiCO2.xlsx` sesuai peringatan atribusi SIPONGI KEMENHUT.
+SELESAI PENUH: Pembuatan Dokumen Jurnal Ilmiah Standar SINTA 3 / IEEE (Word .docx dan Markdown .md) untuk kedua topik Machine Learning Week 11:
+1. Topik 1 (Clustering Karhutla 2023): Klasterisasi 38 provinsi berdasarkan emisi CO₂ dan luas karhutla 2023 (K-Means K=7).
+2. Topik 2 (Time Series Forecasting Bengkulu Menuju 2027): Prediksi deret waktu 30 tahun (1997–2026) karhutla Provinsi Bengkulu menuju 2027 menggunakan model terbaik ARIMA(0,1,1).
 
 ## Done So Far
-- Membuat file `Week_11/README.md` yang memuat atribusi resmi untuk dataset `emisiCO2.xlsx`:
-  - Peringatan wajib cantumkan sumber: SIPONGI KEMENHUT.
-  - Tautan sumber: `https://sipongi.gakkum.kehutanan.go.id/emisi-co2`.
-- Memperbarui peta struktur pada `DANISH_AI_SUMMARY.md` untuk mencatat folder `Week_11/`.
+- **Topik 2 (Time Series Forecasting Bengkulu 2027):**
+  - Notebook eksekutif: `Week_11/Time_Series/Main_TimeSeries_Bengkulu.ipynb` (24 sel sukses tereksekusi).
+  - Output folder: `Week_11/Time_Series/output_timeseries_bengkulu/` (3 CSV hasil analisis, 4 figur visualisasi resolusi 300 DPI).
+  - Daftar Pustaka: `Week_11/Time_Series/catatan/DAFTAR_PUSTAKA_TIME_SERIES.md` (24 referensi jurnal bereputasi, 100% tervalidasi live HTTP 200/202 tanpa error 404/403).
+  - Skrip Generator Word: `Week_11/Time_Series/catatan/generate_timeseries_paper.py`.
+  - Dokumen Word SINTA 3: `Week_11/Time_Series/catatan/Artikel_Jurnal_SINTA3_TimeSeries_Bengkulu.docx` (809 KB, 2 kolom IEEE, tabel full-width rapi, 4 figur tertanam).
+  - Naskah Markdown: `Week_11/Time_Series/catatan/NASKAH_JURNAL_TIMESERIES_BENGKULU.md` (32 KB, lengkap dengan seluruh persamaan LaTeX KaTeX, tabel Markdown, dan 24 rujukan).
+- **Topik 1 (Clustering Karhutla 2023):**
+  - Seluruh artefak selesai di `Week_11/Cluster/catatan/` (Word .docx 1,6 MB, Markdown .md 35 KB, Daftar Pustaka 26 rujukan HTTP 200).
 
 ## Exactly Where I Stopped
-Dokumentasi kredit `Week_11/README.md` selesai dibuat. Belum ada tugas analisis/kode lanjutan di Week 11.
+Seluruh tugas penelitian, komparasi model, peramalan tahun 2027, serta penulisan artikel ilmiah SINTA 3 telah tuntas 100% dan terverifikasi.
 
 ## Next Steps (in order)
-1. Menunggu instruksi atau materi tugas berikutnya untuk `Week_11`.
+1. Menyerahkan hasil lengkap kepada pengguna (user).
+2. Menunggu masukan revisi bila diperlukan.
 
 ## Half-Done / Uncommitted Changes
 - `Week_11/README.md` baru dibuat.

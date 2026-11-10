@@ -1,5 +1,15 @@
 # Changelog
 
+### 2026-11-10 — Authored SINTA 3 Scientific Paper on Time Series Forecasting for Bengkulu 2027
+- What: Analyzed 30-year continuous time series (1997–2026) of forest and land fires in Bengkulu Province from official SIPONGI KEMENHUT data.
+- What: Verified level stationarity via Augmented Dickey-Fuller (ADF = -3.4044, p = 0.0108 < 0.05).
+- What: Executed chronological evaluation (train 1997–2021, test 2022–2026) across 5 competitive models: ARIMA(0,1,1), Holt-Winters, SVR (RBF), Random Forest, and Polynomial Regression.
+- What: Identified ARIMA(0,1,1) as top performer (RMSE = 589.75 ha, MAE = 509.05 ha), successfully projecting Bengkulu 2027 burned area to 487.65 ha (95% CI: [0.00 ha, 3,924.65 ha]), marking a moderate increase (+362.50 ha) from 2026.
+- What: Validated 24 scholarly reference DOIs/URLs live via HTTP audit (100% HTTP 200/202 OK, zero 404/403).
+- What: Generated complete publication-grade Word document (.docx) and Markdown manuscript (.md) with standard 2-column IEEE format, 4 full-width tables, 4 high-res figures (300 DPI), and 24 validated citations.
+- Files: Week_11/Time_Series/catatan/Artikel_Jurnal_SINTA3_TimeSeries_Bengkulu.docx, Week_11/Time_Series/catatan/NASKAH_JURNAL_TIMESERIES_BENGKULU.md, Week_11/Time_Series/catatan/DAFTAR_PUSTAKA_TIME_SERIES.md, Week_11/Time_Series/catatan/generate_timeseries_paper.py, Week_11/Time_Series/Main_TimeSeries_Bengkulu.ipynb, Week_11/Time_Series/output_timeseries_bengkulu/.
+- Verified: Built 809 KB docx with 4 embedded 300 DPI figures and anti-split tables; verified Markdown alignment with notebook experimental data.
+
 ### 2026-11-10 — Authored SINTA 3 Scientific Paper on Forest Fire Clustering in Indonesia
 - What: Prepared dataset attribution, cleaned & merged SIPONGI KEMENHUT 2023 data (burned area & CO2 emissions across 38 provinces).
 - What: Engineered orthogonal dimension features (log burned area vs log emission intensity per hectare, r = -0.018) avoiding redundancy of log emisi vs log luas (r = 0.955).
