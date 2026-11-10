@@ -1,5 +1,14 @@
 # Changelog
 
+### 2026-11-10 — Authored SINTA 3 Scientific Paper on Forest Fire Clustering in Indonesia
+- What: Prepared dataset attribution, cleaned & merged SIPONGI KEMENHUT 2023 data (burned area & CO2 emissions across 38 provinces).
+- What: Engineered orthogonal dimension features (log burned area vs log emission intensity per hectare, r = -0.018) avoiding redundancy of log emisi vs log luas (r = 0.955).
+- What: Evaluated K-Means, Agglomerative Hierarchical (Ward), and Gaussian Mixture Models across K=2..8; determined K=7 as optimal (Silhouette 0.4285, DBI 0.6712, CH 33.5641) with 7 distinct spatial typologies.
+- What: Validated 26 scholarly references via automated live HTTP testing (100% HTTP 200/202 OK, zero 404/403).
+- What: Authored publication-grade 2-column IEEE format Word document (.docx) and full Markdown manuscript (.md) complete with author metadata (Danish Mahdi & Setyawan Wibisono, Polines Semarang), 4 full-width anti-clipping tables, and 6 high-res figures.
+- Files: Week_11/catatan/Artikel_Jurnal_SINTA3_Clustering_Karhutla.docx, Week_11/catatan/NASKAH_JURNAL_CLUSTERING_SINTA3.md, Week_11/catatan/DAFTAR_PUSTAKA_JURNAL.md, Week_11/catatan/generate_clustering_paper.py, Week_11/Main.ipynb, Week_11/output_week11/, Week_11/README.md.
+- Verified: Ran python-docx generator script (1.6 MB docx output); inspected tables, figures, metadata, and notebook outputs.
+
 ### 2026-11-03 — Authored SINTA 3 Scientific Paper on Bank Marketing Classification
 - What: Authored complete, publication-grade academic journal article in standard 2-column IEEE format for SINTA 3 indexing based on `Week_10/Penilitian_Klasifikasi.ipynb`.
 - What: Validated 22 scholarly reference DOIs/URLs live using Python (`validate_final_references.py`), confirming 100% active status (`HTTP 200 OK`).
