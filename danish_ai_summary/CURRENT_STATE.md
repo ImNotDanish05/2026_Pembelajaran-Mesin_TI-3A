@@ -5,6 +5,14 @@ Updated: 2026-11-18
 SELESAI PENUH: Konversi dokumen modul pembelajaran Klastering Word (`Week_12/Modul_11_Klastering_Rev06.docx`) ke format Markdown presisi tinggi (`Week_12/Modul_11_Klastering_Rev06.md`) beserta seluruh ekstraksi aset gambar visualisasi ke `Week_12/images/`.
 
 ## Done So Far
+- **Week 12 (Tugas Perhitungan Matematika Manual Klastering 2 Algoritma):**
+  - Berhasil menyelesaikan seluruh perhitungan manual matematika step-by-step untuk **K-Means** dan **Hierarchical Agglomerative Clustering (HAC)** pada dataset pelanggan minimarket ($N=6$, skala belanja dinormalisasi ratusan ribu rupiah: $1,0$ s.d. $10,0$).
+  - Dokumen tersimpan di [Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md) lengkap dengan:
+    1. Perhitungan substitusi Euclidean Distance setiap objek.
+    2. Tabel rekapitulasi iterasi 1 & 2 K-Means hingga konvergen serta nilai WCSS ($9,167$).
+    3. Matriks jarak $D_0$ s.d. $D_4$ Agglomerative Single Linkage dengan kaidah *tie-breaking* leksikografis alfabet.
+    4. Panduan sketsa gambar koordinat Cartesius 2D & Dendrogram bertingkat untuk digambar di kertas folio.
+    5. Interpretasi bisnis dan profil segmen pelanggan.
 - **Week 12 (Modul Klastering K-Means & Hierarchical Agglomerative):**
   - Konversi utuh dari `Week_12/Modul_11_Klastering_Rev06.docx` menjadi `Week_12/Modul_11_Klastering_Rev06.md` (3.130 baris, 80.636 karakter).
   - Ekstraksi 9 gambar grafik visualisasi ke [Week_12/images/](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/) (`image1.png` s.d. `image9.png`).
