@@ -1,0 +1,4 @@
+Buat dalam 2 algoritma
+1. K-Means
+2. Aglomeratif
+Tabel 1. Contoh Dataset Perilaku Pelanggan Minimarket
