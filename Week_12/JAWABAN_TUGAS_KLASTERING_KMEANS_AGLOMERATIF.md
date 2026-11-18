@@ -378,62 +378,59 @@ Hasil pemotongan menghasilkan 2 klaster:
 
 ## 4. PANDUAN MENGGAMBAR GRAFIK DI KERTAS FOLIO
 
-Saat menyalin ke kertas bergaris/folio, buatlah 2 gambar berikut menggunakan penggaris dan pensil/pulpen warna:
+Saat menyalin ke kertas bergaris/folio, buatlah gambar grafik dengan **skala sumbu yang konsisten 1 : 1** (skala $X$ dan $Y$ sama-sama menggunakan kelipatan 1: $0, 1, 2, 3, 4, 5, \dots$ sehingga setiap kotak berukuran bujur sangkar murni $1 \times 1$ unit).
+
+---
 
 ### 4.1 Grafik 1: Scatter Plot 2D K-Means & Posisi Centroid
 
-- **Sumbu Horizontal ($X$):** Jumlah Kunjungan (skala 0 s/d 16, kelipatan 2).
-- **Sumbu Vertikal ($Y$):** Belanja Ternormalisasi (skala 0 s/d 11, kelipatan 1).
+- **Sumbu Horizontal ($X$):** Jumlah Kunjungan (skala $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16$ — kelipatan 1).
+- **Sumbu Vertikal ($Y$):** Total Belanja Ternormalisasi (skala $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12$ — kelipatan 1).
+- **Aspek Rasio:** Sama panjang ($1:1$, 1 garis kotak di kertas folio = 1 unit).
 
-```text
-Belanja (X2)
-  ^
-10|                                              ● P6 (15, 10)
- 9|                                      ● P5 (14, 9)
- 8|                              ● P4 (12, 8)
- 7|
- 6|                     [KLASTER 2: TINGGI]
- 5|                              ▲ C2 (13.67, 9.0)
- 4|
- 3|
- 2|          ● P3 (4, 2)
- 1|    ● P1 (2, 1)   [KLASTER 1: RENDAH]
-  |       ▲ C1 = P2 (3, 1.5)
- 0+----+----+----+----+----+----+----+----+----+--> Kunjungan (X1)
-  0    2    4    6    8    10   12   14   16
-```
+![Grafik 1. Diagram Kartesius 2D Perilaku Pelanggan & Hasil K-Means](images/grafik_koordinat_pelanggan_kmeans.png)
 
-**Keterangan Gambar di Folio:**
-- Titik Bulat (●): Posisi objek pelanggan ($P_1$ s/d $P_6$).
-- Segitiga / Tanda Silang (▲): Titik Centroid akhir ($C_1$ dan $C_2$).
-- Berikan arsiran atau lingkaran garis putus-putus untuk membatasi kelompok Klaster 1 dan Klaster 2.
+*Gambar 1. Diagram Kartesius 2D Perilaku Pelanggan, Centroid, dan Batas Klaster ($K=2$).*
+
+**Petunjuk Menggambar di Kertas Folio:**
+1. **Buat Garis Salib Sumbu:**
+   - Sumbu $X$ mendatar: beri tanda titik setiap 1 garis/kotak dari angka $0$ sampai $16$.
+   - Sumbu $Y$ tegak: beri tanda titik setiap 1 garis/kotak dari angka $0$ sampai $12$.
+2. **Plot 6 Titik Objek Pelanggan (Gunakan Bulatan ●):**
+   - $P_1$ pada koordinat $(2; 1,0)$
+   - $P_2$ pada koordinat $(3; 1,5)$ *(setengah kotak di antara baris 1 dan 2)*
+   - $P_3$ pada koordinat $(4; 2,0)$
+   - $P_4$ pada koordinat $(12; 8,0)$
+   - $P_5$ pada koordinat $(14; 9,0)$
+   - $P_6$ pada koordinat $(15; 10,0)$
+3. **Plot Titik Centroid Akhir (Gunakan Simbol Bintang/Segitiga ★):**
+   - $C_1$ pada koordinat $(3,0;\ 1,5)$ *(berimpit tepat dengan titik $P_2$)*
+   - $C_2$ pada koordinat $(13,67;\ 9,0)$ *(sekitar dua pertiga kotak setelah angka 13 pada baris ke-9)*
+4. **Beri Garis Lingkaran/Elips Putus-putus:**
+   - Lingkupi $\{P_1, P_2, P_3\}$ dan beri label **"Klaster 1: Belanja Rendah"** (warna biru).
+   - Lingkupi $\{P_4, P_5, P_6\}$ dan beri label **"Klaster 2: Belanja Tinggi"** (warna merah/oranye).
 
 ---
 
 ### 4.2 Grafik 2: Dendrogram Agglomerative Clustering
 
-- **Sumbu Vertikal ($Y$):** Ketinggian Jarak Penggabungan ($d$).
-- **Sumbu Horizontal ($X$):** Objek data ($P_1, P_2, P_3, P_4, P_5, P_6$).
+- **Sumbu Vertikal ($Y$):** Jarak Penggabungan Euclidean ($d$) dari skala $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11$ (kelipatan 1 konsisten).
+- **Sumbu Horizontal ($X$):** Urutan objek data ($P_1, P_2, P_3, P_4, P_5, P_6$).
 
-```text
-Jarak (d)
-  ^
-10|---------------------------+ (d = 10.0000)
-  |                           |
- 8|                           |
-  |                           |  - - - - - - Garis Potong h = 5.0 (K = 2)
- 6|                           |
-  |                           |
- 4|                           |
-  |                           +-------+ (d = 2.2361)
- 2|             +-------+     |       |
-  |     +---+   |       |     |   +---+ (d = 1.4142)
-  |     |   |   | (d=1.1180)  |   |   |
- 0+-----+---+---+-------------+---+---+---> Objek
-       P1  P2  P3            P4  P5  P6
-        \_____/               \_____/
-        Klaster 1             Klaster 2
-```
+![Grafik 2. Dendrogram Agglomerative Hierarchical Clustering](images/grafik_dendrogram_agglomerative.png)
+
+*Gambar 2. Dendrogram Hierarchical Agglomerative Clustering (Single Linkage) & Garis Pemotongan $h=5,0$.*
+
+**Petunjuk Menggambar Dendrogram di Kertas Folio:**
+1. Buat garis dasar horizontal dan tulis 6 titik objek secara berurutan dengan jarak antar-titik seimbang: $P_1, P_2, P_3, P_4, P_5, P_6$.
+2. Buat sumbu tegak di sebelah kiri untuk skala jarak $d$ dari $0$ hingga $11$ (kelipatan 1).
+3. Tarik garis cabang penggabungan berbentuk tapal kuda terbalik (U-shape):
+   - Hubungkan $P_1$ dan $P_2$ setinggi $d = 1,12$.
+   - Hubungkan $(P_1, P_2)$ dengan $P_3$ setinggi $d = 1,12$.
+   - Hubungkan $P_5$ dan $P_6$ setinggi $d = 1,41$.
+   - Hubungkan $P_4$ dengan $\{P_5, P_6\}$ setinggi $d = 2,24$.
+   - Hubungkan kelompok $\{P_1, P_2, P_3\}$ dengan $\{P_4, P_5, P_6\}$ setinggi $d = 10,00$.
+4. **Tarik Garis Putus-putus Merah Horizontal** pada ketinggian $h = 5,0$ (di antara garis $2,24$ dan $10,00$) sebagai garis pemotongan klaster yang membelah hierarki menjadi **2 klaster**.
 
 ---
 

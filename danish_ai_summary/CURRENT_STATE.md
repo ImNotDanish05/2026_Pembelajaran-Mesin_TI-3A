@@ -7,11 +7,12 @@ SELESAI PENUH: Konversi dokumen modul pembelajaran Klastering Word (`Week_12/Mod
 ## Done So Far
 - **Week 12 (Tugas Perhitungan Matematika Manual Klastering 2 Algoritma):**
   - Berhasil menyelesaikan seluruh perhitungan manual matematika step-by-step untuk **K-Means** dan **Hierarchical Agglomerative Clustering (HAC)** pada dataset pelanggan minimarket ($N=6$, skala belanja dinormalisasi ratusan ribu rupiah: $1,0$ s.d. $10,0$).
-  - Dokumen tersimpan di [Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md) lengkap dengan:
-    1. Perhitungan substitusi Euclidean Distance setiap objek.
-    2. Tabel rekapitulasi iterasi 1 & 2 K-Means hingga konvergen serta nilai WCSS ($9,167$).
-    3. Matriks jarak $D_0$ s.d. $D_4$ Agglomerative Single Linkage dengan kaidah *tie-breaking* leksikografis alfabet.
-    4. Panduan sketsa gambar koordinat Cartesius 2D & Dendrogram bertingkat untuk digambar di kertas folio.
+  - Dokumen tersimpan di [Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md).
+  - Menghasilkan 2 gambar grafik presisi tinggi dengan Python Pycairo dengan skala 1:1 konsisten (kotak bujur sangkar murni $1 \times 1$ unit, kelipatan 1 pada sumbu X dan Y: $0, 1, 2, 3, \dots$):
+    1. [Week_12/images/grafik_koordinat_pelanggan_kmeans.png](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/grafik_koordinat_pelanggan_kmeans.png) (Scatter plot 2D posisi titik $P_1$ s.d. $P_6$, centroid $C_1, C_2$, dan batas elips klaster).
+    2. [Week_12/images/grafik_dendrogram_agglomerative.png](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/grafik_dendrogram_agglomerative.png) (Dendrogram Single Linkage bertingkat dengan garis potong $h=5,0$ untuk $K=2$).
+    3. Perhitungan substitusi Euclidean Distance setiap objek, tabel rekapitulasi iterasi 1 & 2 K-Means (konvergen), nilai WCSS ($9,167$).
+    4. Matriks jarak $D_0$ s.d. $D_4$ Agglomerative Single Linkage dengan kaidah *tie-breaking* leksikografis alfabet.
     5. Interpretasi bisnis dan profil segmen pelanggan.
 - **Week 12 (Modul Klastering K-Means & Hierarchical Agglomerative):**
   - Konversi utuh dari `Week_12/Modul_11_Klastering_Rev06.docx` menjadi `Week_12/Modul_11_Klastering_Rev06.md` (3.130 baris, 80.636 karakter).
