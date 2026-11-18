@@ -2,31 +2,30 @@
 Updated: 2026-11-18
 
 ## Goal in Progress
-SELESAI PENUH: Konversi dokumen modul pembelajaran Klastering Word (`Week_12/Modul_11_Klastering_Rev06.docx`) ke format Markdown presisi tinggi (`Week_12/Modul_11_Klastering_Rev06.md`) beserta seluruh ekstraksi aset gambar visualisasi ke `Week_12/images/`.
+SELESAI PENUH: 
+1. Konversi dokumen modul perkuliahan Klastering Word (`Week_12/Modul_11_Klastering_Rev06.docx`) ke Markdown presisi tinggi (`Week_12/Modul_11_Klastering_Rev06.md`) beserta seluruh ekstraksi 9 gambar ke `Week_12/images/`.
+2. Pengerjaan tugas mandiri perhitungan matematika manual klastering bertahap (K-Means & Hierarchical Agglomerative Clustering) siap salin ke kertas folio pada dataset perilaku pelanggan minimarket di `Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md`.
+3. Pembuatan 2 visualisasi grafik presisi tinggi bebas garis distraksi (hanya sumbu kartesius & titik koordinat) di `Week_12/images/`.
 
 ## Done So Far
 - **Week 12 (Tugas Perhitungan Matematika Manual Klastering 2 Algoritma):**
-  - Berhasil menyelesaikan seluruh perhitungan manual matematika step-by-step untuk **K-Means** dan **Hierarchical Agglomerative Clustering (HAC)** pada dataset pelanggan minimarket ($N=6$, skala belanja dinormalisasi ratusan ribu rupiah: $1,0$ s.d. $10,0$).
+  - Berhasil menyelesaikan seluruh perhitungan manual matematika step-by-step untuk **K-Means** dan **Hierarchical Agglomerative Clustering (HAC Single Linkage)** pada dataset pelanggan minimarket ($N=6$, skala belanja dinormalisasi ratusan ribu rupiah: $1,0$ s.d. $10,0$).
   - Dokumen tersimpan di [Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md).
-  - Menghasilkan 2 gambar grafik presisi tinggi dengan Python Pycairo dengan skala 1:1 konsisten (kotak bujur sangkar murni $1 \times 1$ unit, kelipatan 1 pada sumbu X dan Y: $0, 1, 2, 3, \dots$):
-    1. [Week_12/images/grafik_koordinat_pelanggan_kmeans.png](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/grafik_koordinat_pelanggan_kmeans.png) (Scatter plot 2D posisi titik $P_1$ s.d. $P_6$, centroid $C_1, C_2$, dan batas elips klaster).
+  - Menghasilkan 2 gambar grafik presisi tinggi dengan Python Pycairo berlatar putih bersih tanpa garis kisi (*grid*) atau garis proyeksi yang membingungkan:
+    1. [Week_12/images/grafik_koordinat_pelanggan_kmeans.png](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/grafik_koordinat_pelanggan_kmeans.png) (Scatter plot 2D posisi titik $P_1$ s.d. $P_6$ dan centroid $C_1, C_2$ dengan skala konsisten 1:1).
     2. [Week_12/images/grafik_dendrogram_agglomerative.png](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/grafik_dendrogram_agglomerative.png) (Dendrogram Single Linkage bertingkat dengan garis potong $h=5,0$ untuk $K=2$).
-    3. Perhitungan substitusi Euclidean Distance setiap objek, tabel rekapitulasi iterasi 1 & 2 K-Means (konvergen), nilai WCSS ($9,167$).
-    4. Matriks jarak $D_0$ s.d. $D_4$ Agglomerative Single Linkage dengan kaidah *tie-breaking* leksikografis alfabet.
-    5. Interpretasi bisnis dan profil segmen pelanggan.
+  - Perhitungan matematis diverifikasi dengan skrip Python: K-Means konvergen pada iterasi 2 ($WCSS = 9,167$), HAC membentuk partisi identik pada cut-off $h=5,0$.
 - **Week 12 (Modul Klastering K-Means & Hierarchical Agglomerative):**
   - Konversi utuh dari `Week_12/Modul_11_Klastering_Rev06.docx` menjadi `Week_12/Modul_11_Klastering_Rev06.md` (3.130 baris, 80.636 karakter).
   - Ekstraksi 9 gambar grafik visualisasi ke [Week_12/images/](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/Week_12/images/) (`image1.png` s.d. `image9.png`).
   - Preservasi 497 rumus matematika OMML (jarak Euclidean, normalisasi Min-Max, centroid, WCSS, Silhouette Score, DBI, CHI, Cophenetic Correlation Coefficient).
   - Preservasi 44 tabel markdown reguler tanpa data hilang.
   - Pembentukan blok kode Python otomatis untuk implementasi K-Means di Bagian 16.
-- **Topik 2 Week 11 (Time Series Forecasting Bengkulu 2027):**
-  - Notebook eksekutif, naskah Word & Markdown tuntas.
-- **Topik 1 Week 11 (Clustering Karhutla 2023):**
-  - Naskah Word SINTA 3 & Markdown tuntas.
+- **Modul Notes Week 12:**
+  - Ditambahkan ke [danish_ai_summary/modules/week_12_clustering.md](file:///media/data1/project/kuliah/2026_Pembelajaran-Mesin_TI-3A/danish_ai_summary/modules/week_12_clustering.md).
 
 ## Exactly Where I Stopped
-Modul Week 12 berhasil dikonversi ke Markdown lengkap dengan tautan gambar, tabel, dan rumus matematika. Siap untuk tahap berikutnya (pengerjaan tugas atau komparasi algoritma sesuai `Buat dalam 2 algoritma.txt`).
+Seluruh tugas Week 12 telah selesai 100%: modul Markdown, jawaban tugas manual folio-ready, visualisasi grafik tanpa garis distraksi, serta sinkronisasi summary repositori. Siap untuk arahan pengguna selanjutnya.
 
 ## Next Steps (in order)
 1. Menyerahkan hasil lengkap kepada pengguna (user).

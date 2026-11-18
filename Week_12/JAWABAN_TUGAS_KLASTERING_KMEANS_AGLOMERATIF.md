@@ -386,29 +386,28 @@ Saat menyalin ke kertas bergaris/folio, buatlah gambar grafik dengan **skala sum
 
 - **Sumbu Horizontal ($X$):** Jumlah Kunjungan (skala $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16$ — kelipatan 1).
 - **Sumbu Vertikal ($Y$):** Total Belanja Ternormalisasi (skala $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12$ — kelipatan 1).
-- **Aspek Rasio:** Sama panjang ($1:1$, 1 garis kotak di kertas folio = 1 unit).
+- **Aspek Rasio:** Sama panjang ($1:1$, 1 kotak di kertas folio = 1 unit).
 
 ![Grafik 1. Diagram Kartesius 2D Perilaku Pelanggan & Hasil K-Means](images/grafik_koordinat_pelanggan_kmeans.png)
 
-*Gambar 1. Diagram Kartesius 2D Perilaku Pelanggan, Centroid, dan Batas Klaster ($K=2$).*
+*Gambar 1. Diagram Kartesius 2D Perilaku Pelanggan & Posisi Centroid ($K=2$).*
 
-**Petunjuk Menggambar di Kertas Folio:**
+**Petunjuk Menggambar di Kertas Folio (Sederhana & Bersih):**
 1. **Buat Garis Salib Sumbu:**
    - Sumbu $X$ mendatar: beri tanda titik setiap 1 garis/kotak dari angka $0$ sampai $16$.
    - Sumbu $Y$ tegak: beri tanda titik setiap 1 garis/kotak dari angka $0$ sampai $12$.
-2. **Plot 6 Titik Objek Pelanggan (Gunakan Bulatan ●):**
-   - $P_1$ pada koordinat $(2; 1,0)$
-   - $P_2$ pada koordinat $(3; 1,5)$ *(setengah kotak di antara baris 1 dan 2)*
-   - $P_3$ pada koordinat $(4; 2,0)$
-   - $P_4$ pada koordinat $(12; 8,0)$
-   - $P_5$ pada koordinat $(14; 9,0)$
-   - $P_6$ pada koordinat $(15; 10,0)$
-3. **Plot Titik Centroid Akhir (Gunakan Simbol Bintang/Segitiga ★):**
-   - $C_1$ pada koordinat $(3,0;\ 1,5)$ *(berimpit tepat dengan titik $P_2$)*
-   - $C_2$ pada koordinat $(13,67;\ 9,0)$ *(sekitar dua pertiga kotak setelah angka 13 pada baris ke-9)*
-4. **Beri Garis Lingkaran/Elips Putus-putus:**
-   - Lingkupi $\{P_1, P_2, P_3\}$ dan beri label **"Klaster 1: Belanja Rendah"** (warna biru).
-   - Lingkupi $\{P_4, P_5, P_6\}$ dan beri label **"Klaster 2: Belanja Tinggi"** (warna merah/oranye).
+2. **Plot 6 Titik Objek Pelanggan:**
+   - **Klaster 1 (Warna Biru):**
+     - $P_1(2; 1,0)$
+     - $P_2(3; 1,5)$ *(setengah kotak di antara baris 1 dan 2)*
+     - $P_3(4; 2,0)$
+   - **Klaster 2 (Warna Merah/Oranye):**
+     - $P_4(12; 8,0)$
+     - $P_5(14; 9,0)$
+     - $P_6(15; 10,0)$
+3. **Plot Posisi Centroid Akhir:**
+   - $C_1(3,0;\ 1,5)$ *(tepat berimpit pada titik $P_2$, beri tanda X atau bintang kuning/emas)*
+   - $C_2(13,67;\ 9,0)$ *(sekitar dua pertiga kotak setelah angka 13 pada baris ke-9)*
 
 ---
 

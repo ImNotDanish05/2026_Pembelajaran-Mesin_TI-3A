@@ -43,6 +43,7 @@ Machine learning coursework repository covering supervised learning implementati
 | Changelog & history | danish_ai_summary/CHANGELOG.md |
 | Week 7 KNN details | danish_ai_summary/modules/week_7_knn.md |
 | Week 9 Fuzzy Logic | danish_ai_summary/modules/week_9_fuzzy.md |
+| Week 12 Clustering | danish_ai_summary/modules/week_12_clustering.md |
 | Older history | danish_ai_summary/archive/ (only if needed) |
 
 ## DO NOT touch

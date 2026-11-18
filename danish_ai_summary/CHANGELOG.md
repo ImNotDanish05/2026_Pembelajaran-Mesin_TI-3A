@@ -1,5 +1,12 @@
 # Changelog
 
+### 2026-11-18 — Solved Week 12 Clustering Manual Assignment & Converted Lecture Module to Markdown
+- What: Converted lecture module `Week_12/Modul_11_Klastering_Rev06.docx` to high-fidelity Markdown `Week_12/Modul_11_Klastering_Rev06.md` (3,130 lines, 80,636 chars), extracting 9 images to `Week_12/images/` and capturing all 497 OMML math formulas, 44 tables, and Python implementation.
+- What: Fully calculated and authored folio-ready assignment solution `Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md` for both K-Means and Hierarchical Agglomerative Clustering (HAC Single Linkage) on Minimarket customer behavior dataset ($N=6$, spend scaled to hundreds of thousands IDR: $1.0$ to $10.0$).
+- What: Generated 2 custom high-resolution plots via Python Pycairo with 1:1 scale and clean white background: `Week_12/images/grafik_koordinat_pelanggan_kmeans.png` (scatter plot with points $P_1$–$P_6$ and centroids $C_1, C_2$) and `Week_12/images/grafik_dendrogram_agglomerative.png` (dendrogram tree with threshold cut $h=5.0$).
+- Files: Week_12/Modul_11_Klastering_Rev06.docx, Week_12/Modul_11_Klastering_Rev06.md, Week_12/JAWABAN_TUGAS_KLASTERING_KMEANS_AGLOMERATIF.md, Week_12/images/, danish_ai_summary/modules/week_12_clustering.md, danish_ai_summary/CURRENT_STATE.md, DANISH_AI_SUMMARY.md.
+- Verified: Both algorithms mathematically verified via Python; K-Means converged in 2 iterations ($WCSS = 9.167$); Agglomerative Single Linkage distance matrices verified $D_0$ through $D_4$; KaTeX math syntax verified without parse errors; plots verified clean without clutter.
+
 ### 2026-11-10 — Authored SINTA 3 Scientific Paper on Time Series Forecasting for Bengkulu 2027
 - What: Analyzed 30-year continuous time series (1997–2026) of forest and land fires in Bengkulu Province from official SIPONGI KEMENHUT data.
 - What: Verified level stationarity via Augmented Dickey-Fuller (ADF = -3.4044, p = 0.0108 < 0.05).
